@@ -6,8 +6,16 @@ export const mainNavItems: NavItem[] = [
     href: '/',
   },
   {
-    title: 'About',
+    title: 'About Us',
     href: '/about',
+  },
+  {
+    title: 'Festival',
+    href: '/festival',
+  },
+  {
+    title: 'Gallery',
+    href: '/gallery',
   },
   {
     title: 'Contact',
@@ -17,15 +25,50 @@ export const mainNavItems: NavItem[] = [
 
 export const footerNavItems: NavItem[] = [
   {
-    title: 'Privacy',
+    title: 'Home',
+    href: '/',
+  },
+  {
+    title: 'About Us',
+    href: '/about',
+  },
+  {
+    title: 'Festival',
+    href: '/festival',
+  },
+  {
+    title: 'Gallery',
+    href: '/gallery',
+  },
+  {
+    title: 'Contact',
+    href: '/contact',
+  },
+  {
+    title: 'Privacy Policy',
     href: '/privacy',
   },
   {
-    title: 'Terms',
+    title: 'Terms & Conditions',
     href: '/terms',
   },
+]
+
+export const socialLinks = [
   {
-    title: 'Sitemap',
-    href: '/sitemap',
+    title: 'Twitter',
+    href: 'https://twitter.com/divinitymusic',
+  },
+  {
+    title: 'Facebook',
+    href: 'https://facebook.com/divinitymusic',
+  },
+  {
+    title: 'Instagram',
+    href: 'https://instagram.com/divinitymusic',
+  },
+  {
+    title: 'YouTube',
+    href: 'https://youtube.com/@divinitymusic',
   },
 ]

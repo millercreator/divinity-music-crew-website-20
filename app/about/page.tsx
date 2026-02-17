@@ -63,13 +63,13 @@ export default function About() {
                   From a <span className="font-script italic">Seed</span> in Aba to a <span className="font-script italic">Global</span> Voice
                 </h2>
                 <div className="space-y-4 md:space-y-6">
-                  <p className="section-description text-sm md:text-base">
+                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     Every great move of God begins with a simple act of obedience.
                   </p>
-                  <p className="section-description text-sm md:text-base">
+                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     Divinity Music Crew (DMC) was birthed on <span className="font-semibold">August 10, 2018</span>, in the vibrant city of <span className="font-semibold">Aba, Abia State, Nigeria</span>. What began as a local gathering of believers has blossomed into a global movement, recording hundreds of participants annually and crossing borders with a singular message of <span className="font-script italic">hope</span>.
                   </p>
-                  <p className="section-description text-sm md:text-base">
+                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     We didn't set out just to start a band. We set out to build a <span className="font-semibold">family</span>. Over the years, our growth hasn't been defined by fame, but by the lives touched, the souls won, and the communities uplifted. We operate with a total dependence on <span className="font-script italic">Grace</span>, acknowledging that every melody we sing and every life we impact is a testament to God's faithfulness.
                   </p>
                 </div>
@@ -90,10 +90,10 @@ export default function About() {
                   Bridging the Gap Between the <span className="font-script italic">Spiritual</span> and the Physical
                 </h3>
                 <div className="space-y-4 md:space-y-6">
-                  <p className="section-description text-sm md:text-base">
+                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     In the world of gospel music, it is easy to focus solely on the "Spiritual Impact"—the song, the sound, the atmosphere. But at DMC, we believe the Gospel is holistic. It must feed the <span className="font-script italic">soul</span> <span className="font-semibold">and</span> the <span className="font-script italic">body</span>.
                   </p>
-                  <p className="section-description text-sm md:text-base">
+                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     Our ministry is built on a <span className="font-semibold">Dual-Purpose Vision</span> inspired by the Holy Spirit:
                   </p>
                   <div className="space-y-3 md:space-y-4">
@@ -110,7 +110,7 @@ export default function About() {
                       </p>
                     </div>
                   </div>
-                  <p className="section-description text-sm md:text-base">
+                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     We don't just sing about <span className="font-script italic">love</span>; we demonstrate it. Through our flagship Charity Worship Festival, we turn our praise into power—raising funds to support non-profits, educational projects, and individuals in need.
                   </p>
                 </div>
@@ -190,7 +190,7 @@ export default function About() {
               </div>
 
               <div className="bg-white border border-border rounded-lg p-6 md:p-12 mb-10 md:mb-12 shadow-sm">
-                <p className="section-description text-sm md:text-base mb-8 text-center">
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance mb-8 text-center">
                   We know that trust is earned. That is why DMC operates differently from many other organizations.
                 </p>
                 <div className="text-center mb-10 md:mb-12">
@@ -208,7 +208,7 @@ export default function About() {
                     <p><span className="font-semibold">Zero</span> percentage goes to overheads.</p>
                     <p><span className="font-semibold">Zero</span> percentage goes to personal profit.</p>
                   </div>
-                  <p className="section-description text-sm md:text-base">
+                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     When you support DMC, you aren't just funding a concert; you are funding educational scholarships, supporting orphanages, and providing relief to the vulnerable. We are merely the <span className="font-script italic">vessel</span>; the destination of your giving is always <span className="font-script italic">Humanity</span>.
                   </p>
                 </div>
@@ -245,7 +245,7 @@ export default function About() {
                     <h3 className="text-lg md:text-2xl font-light mb-3 md:mb-4">
                       Our <span className="font-script italic">Vision</span>
                     </h3>
-                    <p className="section-description text-sm md:text-base">
+                    <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                       To see a world reached by the Gospel of Jesus Christ and Love, preached through the medium of music and acts of service. We are building toward a future of massive worship meetings and charity projects established across nations.
                     </p>
                   </div>
@@ -254,7 +254,7 @@ export default function About() {
                     <h3 className="text-lg md:text-2xl font-light mb-3 md:mb-4">
                       Our <span className="font-script italic">Mission</span>
                     </h3>
-                    <p className="section-description text-sm md:text-base">
+                    <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                       To connect humanity to Divinity through good music.
                     </p>
                   </div>

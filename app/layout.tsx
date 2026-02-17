@@ -7,8 +7,8 @@ import { Header } from '@/components/layout/header'
 import { Footer } from '@/components/layout/footer'
 import { siteConfig } from '@/config/site'
 
-const _geist = Geist({ subsets: ['latin'] })
-const _geistMono = Geist_Mono({ subsets: ['latin'] })
+const _geist = Geist({ subsets: ['latin'], variable: '--font-sans' })
+const _geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-mono' })
 const _playfair = Playfair_Display({ subsets: ['latin'], variable: '--font-script' })
 
 export const metadata: Metadata = {
@@ -40,7 +40,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={_playfair.variable}>
+    <html lang="en" className={`${_playfair.variable} ${_geist.variable} ${_geistMono.variable}`}>
       <body className="font-sans antialiased">
         <Header />
         {children}

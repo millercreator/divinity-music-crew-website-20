@@ -20,8 +20,8 @@ export default function Home() {
                   <span className="font-script italic text-6xl md:text-8xl">Blessings</span> to 
                   <span className="font-script italic text-6xl md:text-8xl"> Humanity</span>.
                 </h1>
-                <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed text-balance">
-                  We are more than a music group. We are a family bound by <span className="font-script italic text-lg">love</span>, bridging the gap between Heaven and Earth through the power of <span className="font-script italic text-lg">sound</span> and the act of <span className="font-script italic text-lg">service</span>.
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance">
+                  We are more than a music group. We are a family bound by <span className="font-script italic">love</span>, bridging the gap between Heaven and Earth through the power of <span className="font-script italic">sound</span> and the act of <span className="font-script italic">service</span>.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                   <Button size="lg" className="px-6 md:px-8 text-sm md:text-base">
@@ -53,10 +53,10 @@ export default function Home() {
                 Connecting <span className="font-script italic">Humanity</span> to <span className="font-script italic">Divinity</span> Through Good Music
               </h2>
               <div className="space-y-6">
-                <p className="section-description">
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                   We believe music is a <span className="font-script italic">vessel</span>. Since our origin in Aba, Abia State, in 2018, Divinity Music Crew (DMC) has grown from a local gathering into a global evangelical movement. But we don't just sing to fill the airwaves; we sing to shift atmospheres.
                 </p>
-                <p className="section-description">
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                   We are a family defined by <span className="font-semibold">total dependence on <span className="font-script italic">Grace</span></span>. Whether we are on stage or in the streets, our mission remains the same: to gather souls, impact lives, and demonstrate that true worship always leads to <span className="font-script italic">service</span>.
                 </p>
               </div>
@@ -78,7 +78,7 @@ export default function Home() {
               </div>
 
               <div className="bg-white border border-border rounded-lg p-6 md:p-16 mb-10 md:mb-12 shadow-sm">
-                <p className="section-description mb-8 text-center">
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                   In a world where transparency is rare, we stand on a distinctive policy of <span className="font-script italic">integrity</span>.
                 </p>
                 <div className="text-center mb-10 md:mb-12">
@@ -86,7 +86,7 @@ export default function Home() {
                   <p className="text-lg md:text-xl font-light text-foreground mb-4">
                     of all funds and proceeds go directly to <span className="font-script italic">charity</span>
                   </p>
-                  <p className="section-description text-sm md:text-base">
+                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     Every donation, every ticket, and every offering given to DMC goes directly to supporting nonprofits, funding educational projects, and providing physical aid to individuals in need.
                   </p>
                 </div>
@@ -122,7 +122,7 @@ export default function Home() {
                 <h3 className="text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
                   A Dual-Purpose <span className="font-script italic">Vision</span> Inspired by the Spirit
                 </h3>
-                <p className="section-description text-sm md:text-base mb-6 md:mb-8">
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                   We believe in a holistic ministry. The Spirit needs <span className="font-script italic">revival</span>, but the body needs <span className="font-script italic">sustenance</span>. Our flagship Charity Worship Festival is where these two needs meet.
                 </p>
                 <div className="space-y-5 md:space-y-6 mb-8 md:mb-10">
@@ -223,10 +223,10 @@ export default function Home() {
                   The <span className="font-script italic">Future</span> We Are Building
                 </h2>
                 <div className="space-y-4 md:space-y-6">
-                  <p className="section-description text-sm md:text-base">
+                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     Our vision is simple yet massive: <span className="font-semibold font-script italic">A world reached by the Gospel of Jesus Christ and Love.</span>
                   </p>
-                  <p className="section-description text-sm md:text-base">
+                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     We are marching toward a future where massive worship meetings and charity projects are established across nations. We are building a <span className="font-script italic">legacy</span> where the song of the Lord brings <span className="font-script italic">hope</span> to the hopeless—spiritually and physically.
                   </p>
                   <p className="text-lg md:text-xl font-light text-foreground">

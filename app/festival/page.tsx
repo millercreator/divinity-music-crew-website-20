@@ -59,10 +59,10 @@ export default function Festival() {
                   More Than a Concert. It's an <span className="font-script italic">Encounter</span>.
                 </h2>
                 <div className="space-y-4 md:space-y-6">
-                  <p className="section-description text-sm md:text-base">
+                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     The Charity Worship Festival is not just an event; it is a mandate. Born from a vision to connect <span className="font-script italic">Humanity</span> to <span className="font-script italic">Divinity</span>, we gather annually to create an atmosphere where the Spirit moves freely and lives are transformed.
                   </p>
-                  <p className="section-description text-sm md:text-base">
+                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     Expect high-energy praise, deep soul-stirring <span className="font-script italic">worship</span>, and a community of believers united by <span className="font-semibold">Passion</span> and <span className="font-semibold">Holiness</span>. Whether you have been with us since our first gathering in Aba in 2018 or this is your first time, come ready to pour out your heart.
                   </p>
                   <Button className="mt-4 md:mt-6 text-sm md:text-base px-6 md:px-8">
@@ -98,7 +98,7 @@ export default function Festival() {
                 <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-6 md:mb-8 text-balance">
                   Your <span className="font-script italic">Worship</span> Has Hands and Feet.
                 </h2>
-                <p className="section-description text-sm md:text-base mb-6 md:mb-8">
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance mb-6 md:mb-8">
                   We believe that true worship must lead to <span className="font-script italic">service</span>. That is why this gathering is unique. It is a "Dual-Purpose Vision" inspired by the Holy Spirit:
                 </p>
                 <div className="space-y-4 md:space-y-6 mb-8 md:mb-10">
@@ -119,7 +119,7 @@ export default function Festival() {
                     </p>
                   </div>
                 </div>
-                <p className="section-description text-sm md:text-base">
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                   This festival is the primary engine for our humanitarian work. The funds raised here don't just pay for a show—they pay for school fees, feed the hungry, and support <span className="font-script italic">nonprofits</span> that are changing the world.
                 </p>
               </div>
@@ -146,7 +146,7 @@ export default function Festival() {
               </div>
 
               <div className="bg-white border border-border rounded-lg p-6 md:p-12 mb-8 md:mb-10 shadow-sm">
-                <p className="section-description text-sm md:text-base mb-6 md:mb-8 text-center">
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance mb-6 md:mb-8 text-center">
                   We want you to worship with a free mind and a clear <span className="font-script italic">conscience</span>.
                 </p>
                 <p className="text-center text-xl md:text-2xl font-light mb-6 md:mb-8">
@@ -154,7 +154,7 @@ export default function Festival() {
                   <br />
                   of all proceeds, ticket sales, and offerings raised during this festival are strictly directed toward <span className="font-script italic">charity</span> outreaches.
                 </p>
-                <p className="section-description text-sm md:text-base text-center mb-6 md:mb-8">
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance text-center mb-6 md:mb-8">
                   We do not use festival proceeds to cover overheads. When you buy a ticket or sow a seed at the Charity Worship Festival, you are directly funding:
                 </p>
                 <div className="space-y-3 md:space-y-4 text-center">
@@ -180,7 +180,7 @@ export default function Festival() {
               <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-8 md:mb-12 text-center text-balance">
                 Mark Your <span className="font-script italic">Calendar</span>
               </h2>
-              <p className="section-subtitle text-center mb-10 md:mb-16">
+              <p className="text-base md:text-lg text-muted-foreground">
                 Don't miss the next move of God.
               </p>
 
@@ -220,7 +220,7 @@ export default function Festival() {
                 <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 md:mb-6 text-balance">
                   What We <span className="font-script italic">Achieved</span>
                 </h2>
-                <p className="section-subtitle">
+                <p className="text-base md:text-lg text-muted-foreground">
                   Real <span className="font-script italic">impact</span> from the last festival
                 </p>
               </div>
@@ -259,10 +259,10 @@ export default function Festival() {
               <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-6 md:mb-8 text-center text-balance">
                 Partner With The <span className="font-script italic">Vision</span>
               </h2>
-              <p className="section-description text-center text-sm md:text-base mb-8 md:mb-12">
+              <p className="text-lg text-foreground/80 leading-relaxed text-balance mb-8 md:mb-12">
                 The Charity Worship Festival is a massive undertaking, and we cannot do it alone. We invite corporate brands, local businesses, and individual partners to stand with us.
               </p>
-              <p className="section-description text-center text-sm md:text-base mb-10 md:mb-12">
+              <p className="text-lg text-foreground/80 leading-relaxed text-balance mb-10 md:mb-12">
                 By sponsoring this event, you aren't just getting brand visibility; you are aligning your organization with a movement of <span className="font-semibold">Love, <span className="font-script italic">Service</span>, and <span className="font-script italic">Humanity</span></span>. Help us cover the logistics so that every single penny raised from the crowd can go to the poor.
               </p>
               <div className="text-center">

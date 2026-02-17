@@ -133,7 +133,7 @@ export default function MediaGalleryPage() {
               <h2 className="text-3xl md:text-4xl font-light tracking-tight mb-4 text-balance">
                 We Believe Every Picture <span className="font-script italic">Tells</span> a Testimony
               </h2>
-              <p className="section-description text-sm md:text-base">
+              <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                 Browse our gallery to experience the two heartbeats of DMC: the passion of our worship and the compassion of our outreach.
               </p>
             </div>
@@ -170,7 +170,7 @@ export default function MediaGalleryPage() {
                 <h3 className="text-lg md:text-xl text-muted-foreground mb-6">
                   Where Divinity Meets Humanity
                 </h3>
-                <p className="section-description text-sm md:text-base max-w-2xl mx-auto">
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                   When we gather, we don't just sing; we ascend. These moments capture the electric atmosphere of our Charity Worship Festivals. From Aba to the world, see the passion, the tears, and the breakthrough that happens when we lift our voices in unison.
                 </p>
               </div>
@@ -185,7 +185,7 @@ export default function MediaGalleryPage() {
                 <h3 className="text-lg md:text-xl text-muted-foreground mb-6">
                   Love in Action
                 </h3>
-                <p className="section-description text-sm md:text-base max-w-2xl mx-auto">
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                   This is where the music becomes movement. Because of our "All-In" Pledge, every worship night fuels a charity day. Explore the tangible impact of your support—real faces, real smiles, and real needs met through the Grace of God.
                 </p>
               </div>
@@ -200,7 +200,7 @@ export default function MediaGalleryPage() {
                 <h3 className="text-lg md:text-xl text-muted-foreground mb-6">
                   The Crew
                 </h3>
-                <p className="section-description text-sm md:text-base max-w-2xl mx-auto">
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                   We are a family bound by love, prayer, and commitment. These candid moments show the genuine connection, the laughter, the rehearsals, and the brotherhood that defines who we are when the spotlight fades.
                 </p>
               </div>
@@ -250,7 +250,7 @@ export default function MediaGalleryPage() {
                 <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-balance">
                   Experience the <span className="font-script italic">Atmosphere</span>
                 </h2>
-                <p className="section-description text-sm md:text-base">
+                <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                   Photos capture a second, but video captures the spirit. Watch highlights from our recent gatherings and see how the DMC family brings the vision to life.
                 </p>
               </div>

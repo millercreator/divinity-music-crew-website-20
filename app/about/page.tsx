@@ -201,7 +201,7 @@ export default function About() {
                   <p className="text-lg md:text-xl font-light text-foreground mb-6">
                     <span className="font-script italic">For Charity</span>
                   </p>
-                  <p className="section-description text-sm md:text-base mb-6">
+                  <p className="text-base md:text-base text-foreground/70 mb-6">
                     We have a strict policy that <span className="font-semibold">ALL</span> funds and proceeds generated from our projects are directed strictly toward charity outreaches and support.
                   </p>
                   <div className="space-y-2 text-foreground/70 text-xs md:text-sm mb-8">

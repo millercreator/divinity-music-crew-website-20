@@ -1,0 +1,65 @@
+SECTION PROMPT
+
+Without including the navigation header and changing the current styling, accurately replicate the layout of the attached image for this hero section. use the image already present currently
+
+Without including the navigation header, changing the current styling and current text sizes and content, accurately replicate the layout of the attached image for this hero section. use the image already present currently
+
+
+ {/* 7 Pillars Section */}
+        <Section className="bg-background border-b py-16 md:py-32">
+          <Container>
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-balance">
+                Bound by <span className="font-script italic">Love</span> and Loyalty
+              </h2>
+              <p className="text-base md:text-lg text-muted-foreground">
+                Our seven core pillars keep our family strong and our mission <span className="font-script italic">pure</span>
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 mb-12 md:mb-16">
+              {[
+                { icon: Heart, title: 'Love', description: 'The root of everything we do.' },
+                { icon: MessageSquare, title: 'Prayers', description: 'The fuel for our engine.' },
+                { icon: Zap, title: 'Holiness', description: 'Our standard of living.' },
+              ].map((pillar) => {
+                const Icon = pillar.icon
+                return (
+                  <div key={pillar.title} className="text-center p-4 md:p-6 hover:bg-secondary/20 rounded-lg transition-colors duration-300">
+                    <div className="flex justify-center mb-4 md:mb-6">
+                      <Icon className="w-12 md:w-14 h-12 md:h-14 text-foreground/50" strokeWidth={1.5} />
+                    </div>
+                    <h3 className="text-lg md:text-xl font-script italic font-semibold mb-2 md:mb-3">{pillar.title}</h3>
+                    <p className="text-foreground/70 text-xs md:text-sm">{pillar.description}</p>
+                  </div>
+                )
+              })}
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 mb-12 md:mb-16">
+              {[
+                { icon: Lightbulb, title: 'Passion', description: 'The energy we bring.' },
+                { icon: Users, title: 'Commitment', description: 'Our promise to the cause.' },
+                { icon: Globe, title: 'Service', description: 'Faith in action.' },
+              ].map((pillar) => {
+                const Icon = pillar.icon
+                return (
+                  <div key={pillar.title} className="text-center p-4 md:p-6 hover:bg-secondary/20 rounded-lg transition-colors duration-300">
+                    <div className="flex justify-center mb-4 md:mb-6">
+                      <Icon className="w-12 md:w-14 h-12 md:h-14 text-foreground/50" strokeWidth={1.5} />
+                    </div>
+                    <h3 className="text-lg md:text-xl font-script italic font-semibold mb-2 md:mb-3">{pillar.title}</h3>
+                    <p className="text-foreground/70 text-xs md:text-sm">{pillar.description}</p>
+                  </div>
+                )
+              })}
+            </div>
+
+            <div className="text-center pt-8 md:pt-10 border-t border-border">
+              <p className="text-xl md:text-2xl font-light text-foreground mb-2">
+                & <span className="font-script italic font-semibold">Humanity</span>
+              </p>
+              <p className="text-muted-foreground text-sm md:text-base">Because people are the heartbeat of God.</p>
+            </div>
+          </Container>
+        </Section>

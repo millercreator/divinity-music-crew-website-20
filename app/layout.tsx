@@ -41,7 +41,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${_playfair.variable} ${_geist.variable} ${_geistMono.variable}`}>
-      <body className="font-sans antialiased">
+      <body>
         <Header />
         {children}
         <Footer />

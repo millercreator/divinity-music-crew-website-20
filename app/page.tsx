@@ -2,15 +2,13 @@ import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/common/container'
 import { Section } from '@/components/common/section'
-import { Heart, Users, Lightbulb, Zap, MessageSquare, Globe, Quote, TextQuote } from 'lucide-react'
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
-        {/* Hero Section with Background Image */}
+        {/* Hero Section */}
         <Section className="relative border-b overflow-hidden p-0 min-h-0 flex items-stretch">
-          {/* Background Image covers the whole section */}
           <div className="absolute inset-0 w-full h-full z-0">
             <Image
               src="/images/hero-worship.jpg"
@@ -45,7 +43,7 @@ export default function Home() {
                 We are more than a music group. We are a family bound by <span className="font-script italic">love</span>, bridging the gap between Heaven and Earth through the power of <span className="font-script italic">sound</span> and the act of <span className="font-script italic">service</span>.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 mb-1 w-full max-w-md justify-center items-center">
-                <Button size="lg" className="w-full xs:w-auto">
+                <Button variant={"secondary"} size="lg" className="w-full xs:w-auto">
                   Join Our Next Worship Night
                 </Button>
                 <Button variant="outline" size="lg" className="w-full xs:w-auto">
@@ -57,7 +55,7 @@ export default function Home() {
         </Section>
 
         {/* Who We Are Section */}
-        <Section className="bg-secondary/40 border-b py-16 md:py-32">
+        <Section className="bg-accent/40 border-b py-16 md:py-32">
           <Container>
             <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-8 md:mb-12 text-balance max-w-4xl">
               Connecting <span className="font-script italic text-primary">Humanity</span> to <span className="font-script italic text-yellow-500">Divinity</span> Through Good Music
@@ -99,11 +97,11 @@ export default function Home() {
                   alt="Right Quote"
                   width={80}
                   height={80}
-                  className="mx-auto mb-5 text-primary"
+                  className="mx-auto mb-5"
                 />
                 <p className="text-3xl md:text-4xl font-light italic text-balance text-foreground mb-7">
                   "In a world where transparency is rare, we stand on a distinctive policy of <span className="font-script italic">integrity</span>.<br />
-                  <span className="font-medium text-primary align-middle">
+                  <span className="font-medium text-secondary align-middle">
                     100%
                   </span> of all funds and proceeds go directly to <span className="font-script italic">charity</span>."
                 </p>
@@ -116,11 +114,11 @@ export default function Home() {
         </Section>
 
         {/* Charity Festival Section with Image */}
-        <Section className="bg-secondary/40">
+        <Section className="bg-secondary/50">
           <Container>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="order-2 md:order-1">
-                <div className="relative aspect-5/3 w-fullrounded-lg overflow-hidden shadow-sm">
+                <div className="relative aspect-5/3 w-full rounded-lg overflow-hidden shadow-sm">
                   <Image
                     src="/images/festival.jpg"
                     alt="Charity Worship Festival stage"
@@ -131,15 +129,15 @@ export default function Home() {
               </div>
               <div className="order-1 md:order-2">
                 <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-balance">
-                  The <span className="font-script italic text-primary">Charity</span> Worship Festival
+                  The <span className="font-script italic text-orange-600">Charity</span> Worship Festival
                 </h2>
-                <h3 className="text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
+                <h3 className="text-lg md:text-xl text-black/50 mb-6 md:mb-8">
                   A Dual-Purpose <span className="font-script italic">Vision</span> Inspired by the Spirit
                 </h3>
                 <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                   We believe in a holistic ministry. The Spirit needs <span className="font-script italic">revival</span>, but the body needs <span className="font-script italic">sustenance</span>. Our flagship Charity Worship Festival is where these two needs meet.
                 </p>
-                <div className="mb-8 mt-5 md:mb-10 divide-y">
+                <div className="mb-8 mt-5 md:mb-10 divide-y divide-black/50">
                   <div className='py-3'>
                     <h4 className="font-semibold mb-2 text-sm md:text-base">Ignite <span className="font-script italic">Spiritual</span> Fire</h4>
                     <p className="text-foreground/70 leading-relaxed text-xs md:text-sm">

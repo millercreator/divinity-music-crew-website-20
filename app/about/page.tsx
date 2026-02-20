@@ -25,7 +25,7 @@ export default function About() {
                   We are Divinity Music Crew—an evangelical family on a mission to connect the heart of humanity to the presence of Divinity.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <Button size="lg" className="px-6 md:px-8 text-sm md:text-base">
+                  <Button variant={"secondary"} size="lg" className="px-6 md:px-8 text-sm md:text-base">
                     Our Story
                   </Button>
                   <Button variant="outline" size="lg" className="px-6 md:px-8 bg-transparent text-sm md:text-base">
@@ -47,10 +47,10 @@ export default function About() {
         </Section>
 
         {/* Who We Are Section */}
-        <Section className="bg-secondary/40 border-b py-16 md:py-32">
+        <Section className="bg-background border-b py-16 md:py-32">
           <Container>
             <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-8 md:mb-12 text-balance max-w-4xl">
-              Our <span className="font-script italic text-primary">Vision</span>
+              Our <span className="font-script italic text-secondary">Vision</span>
             </h2>
             <div className="mb-10">
               {/* Collage Grid */}
@@ -81,7 +81,7 @@ export default function About() {
 
 
         {/* Mission Section */}
-        <Section className="bg-secondary/40 border-b py-16 md:py-32">
+        <Section className="bg-background border-b py-16 md:py-32">
           <Container>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-sm">
@@ -94,7 +94,7 @@ export default function About() {
               </div>
               <div>
                 <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-6 md:mb-8 text-balance">
-                  Our <span className="font-script italic text-primary">Mission</span>
+                  Our <span className="font-script italic text-secondary">Mission</span>
                 </h2>
                 <div className="space-y-4 md:space-y-6">
                   <p className="text-lg text-foreground/80 leading-relaxed text-balance">
@@ -121,13 +121,13 @@ export default function About() {
         </Section>
 
         {/* 7 Pillars Section */}
-        <Section className="bg-secondary/40 border-b py-16 md:py-32">
+        <Section className="bg-secondary/20 border-b py-16 md:py-32">
           <Container>
             <div className="text-center mb-10 md:mb-16">
-              <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-balance">
+              <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-balance text-secondary-foreground">
                 The Values That Sustain Us
               </h2>
-              <p className="text-base md:text-lg text-muted-foreground">
+              <p className="text-base md:text-lg text-secondary-foreground/90">
                 We are not just a team; we are a <span className="font-script italic">family</span> bound by <span className="font-script italic">loyalty</span>
               </p>
             </div>
@@ -145,22 +145,19 @@ export default function About() {
               ].map((pillar, idx) => {
                 const Icon = pillar.icon
 
-                // To achieve up to 4 columns while distributing 6 items,
-                // group into two rows if needed for larger screens.
-                // We'll force wrapping after the 4th item.
                 return (
                   <div
                     key={pillar.title}
-                    className="text-center p-4 md:p-6 hover:bg-secondary/20 rounded-lg transition-colors duration-300 w-full"
+                    className="text-center p-4 md:p-6 w-full"
                     style={idx === 4 && typeof window !== 'undefined' ? { gridColumnStart: 1 } : {}}
                   >
                     <div className="flex justify-center mb-4 md:mb-6">
-                      <span className="flex items-center justify-center rounded-full bg-primary/10 size-18">
-                        <Icon className="w-8 md:w-10 h-8 md:h-10 text-primary" strokeWidth={1.5} />
+                      <span className="flex items-center justify-center rounded-full bg-primary size-20">
+                        <Icon className="w-8 md:w-10 h-8 md:h-10 text-white" strokeWidth={1.5} />
                       </span>
                     </div>
-                    <h3 className="text-lg md:text-xl font-script italic font-semibold mb-2 md:mb-3">{pillar.title}</h3>
-                    <p className="text-foreground/70 text-xs md:text-sm mx-auto max-w-xs">{pillar.description}</p>
+                    <h3 className="text-lg md:text-xl font-script italic font-semibold mb-2 md:mb-3 text-secondary-foreground">{pillar.title}</h3>
+                    <p className="text-secondary-foreground/80 text-xs md:text-sm mx-auto max-w-xs">{pillar.description}</p>
                   </div>
                 )
               })}
@@ -173,7 +170,7 @@ export default function About() {
           <Container>
             <div className="text-center mb-12 md:mb-16">
               <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-balance">
-                Meet Our <span className="font-script italic">Family</span>
+                Meet Our <span className="font-script text-secondary italic">Family</span>
               </h2>
               <p className="text-base md:text-lg text-muted-foreground">
                 The faces, hearts, and hands behind the movement

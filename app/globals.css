@@ -77,11 +77,17 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.141 0.005 285.823);
 
-  /* Primary & Secondary */
-  --primary: oklch(0.488 0.243 264.376);
+  /* 
+    Primary Brand Color — Navy Blue: 
+    Approximate oklch for #162447 (navy blue) = oklch(0.23 0.045 280)
+    For accessibility, primary-foreground is a very light, nearly white tone.
+  */
+  --primary: oklch(0.23 0.045 280);
   --primary-foreground: oklch(0.97 0.014 254.604);
-  --secondary: oklch(0.967 0.001 286.375);
-  --secondary-foreground: oklch(0.21 0.006 285.885);
+
+  /* Secondary: Orange in oklch (approx #ff9100 ≈ oklch(0.78 0.238 57)) */
+  --secondary: oklch(0.78 0.238 57);
+  --secondary-foreground: oklch(0.13 0.018 60);
 
   /* Muted, Accent, Destructive */
   --muted: oklch(0.967 0.001 286.375);
@@ -99,7 +105,7 @@
   --chart-1: oklch(0.809 0.105 251.813);
   --chart-2: oklch(0.623 0.214 259.815);
   --chart-3: oklch(0.546 0.245 262.881);
-  --chart-4: oklch(0.488 0.243 264.376);
+  --chart-4: var(--primary); /* Use primary brand color */
   --chart-5: oklch(0.424 0.199 265.638);
 
   /* Radii */
@@ -108,10 +114,10 @@
   /* Sidebar */
   --sidebar: oklch(0.985 0 0);
   --sidebar-foreground: oklch(0.141 0.005 285.823);
-  --sidebar-primary: oklch(0.546 0.245 262.881);
-  --sidebar-primary-foreground: oklch(0.97 0.014 254.604);
-  --sidebar-accent: oklch(0.967 0.001 286.375);
-  --sidebar-accent-foreground: oklch(0.21 0.006 285.885);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: oklch(0.78 0.238 57);
+  --sidebar-accent-foreground: oklch(0.13 0.018 60);
   --sidebar-border: oklch(0.92 0.004 286.32);
   --sidebar-ring: oklch(0.705 0.015 286.067);
 
@@ -137,10 +143,16 @@
   --popover: oklch(0.21 0.006 285.885);
   --popover-foreground: oklch(0.985 0 0);
 
-  /* Primary & Secondary */
-  --primary: oklch(0.42 0.18 266);
+  /* 
+    Primary Brand Color — Navy Blue dark mode:
+    We'll use a lighter + more saturated version for better display on dark bg.
+    Approximate lighter navy: oklch(0.32 0.08 280)
+  */
+  --primary: oklch(0.32 0.08 280);
   --primary-foreground: oklch(0.97 0.014 254.604);
-  --secondary: oklch(0.274 0.006 286.033);
+
+  /* Secondary: Orange for dark mode (slightly darker) oklch(0.68 0.22 57) */
+  --secondary: oklch(0.68 0.22 57);
   --secondary-foreground: oklch(0.985 0 0);
 
   /* Muted, Accent, Destructive */
@@ -159,15 +171,15 @@
   --chart-1: oklch(0.809 0.105 251.813);
   --chart-2: oklch(0.623 0.214 259.815);
   --chart-3: oklch(0.546 0.245 262.881);
-  --chart-4: oklch(0.488 0.243 264.376);
+  --chart-4: var(--primary); /* Use primary brand color */
   --chart-5: oklch(0.424 0.199 265.638);
 
   /* Sidebar */
   --sidebar: oklch(0.21 0.006 285.885);
   --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.623 0.214 259.815);
-  --sidebar-primary-foreground: oklch(0.97 0.014 254.604);
-  --sidebar-accent: oklch(0.274 0.006 286.033);
+  --sidebar-primary: var(--primary);
+  --sidebar-primary-foreground: var(--primary-foreground);
+  --sidebar-accent: oklch(0.68 0.22 57);
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.552 0.016 285.938);

@@ -14,14 +14,14 @@ export default function About() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <Section className="bg-background border-b overflow-hidden">
+        <Section className="bg-background border-b py-16 md:py-32 overflow-hidden">
           <Container>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center min-h-screen">
-              <div className="flex flex-col justify-center py-12 md:py-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+              <div className="flex flex-col justify-center">
                 <h1 className="text-5xl md:text-7xl font-light tracking-tight mb-8 text-balance">
-                  Bound by <span className="font-script italic">Love</span>. Fueled by <span className="font-script italic">Grace</span>. Committed to <span className="font-script italic">Service</span>.
+                  Fueled by <span className="font-script italic">Grace</span>. Committed to <span className="font-script italic">Service</span>.
                 </h1>
-                <p className="text-base md:text-lg text-muted-foreground mb-10 leading-relaxed text-balance">
+                <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed text-balance">
                   We are Divinity Music Crew—an evangelical family on a mission to connect the heart of humanity to the presence of Divinity.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
@@ -35,8 +35,8 @@ export default function About() {
               </div>
               <div className="relative h-64 sm:h-80 md:h-full min-h-96 rounded-lg overflow-hidden">
                 <Image
-                  src="/images/about-hero.jpg"
-                  alt="Divinity Music Crew team together"
+                  src="/bucket/25.jpeg"
+                  alt="Warm welcoming team"
                   fill
                   className="object-cover"
                   priority
@@ -46,82 +46,75 @@ export default function About() {
           </Container>
         </Section>
 
-        {/* Origin Story Section */}
+        {/* Who We Are Section */}
+        <Section className="bg-secondary/40 border-b py-16 md:py-32">
+          <Container>
+            <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-8 md:mb-12 text-balance max-w-4xl">
+              Our <span className="font-script italic text-primary">Vision</span>
+            </h2>
+            <div className="mb-10">
+              {/* Collage Grid */}
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+                {["/bucket/3.jpeg", "/bucket/4.jpeg", "/bucket/5.jpeg", "/bucket/6.jpeg"].map((i) => (
+                  <div key={i} className="relative aspect-square rounded overflow-hidden shadow">
+                    <Image
+                      src={i || ""}
+                      alt={`Collage ${i}`}
+                      fill
+                      className="object-cover object-center"
+                      sizes="(min-width: 768px) 25vw, 50vw"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+            <div className="space-y-6">
+              <p className="text-lg text-foreground/80 leading-relaxed text-balance">
+                Our vision is to see hearts awakened and lives transformed through the power of worship, creativity, and community. We long to be a bridge—reconciling humanity to <span className="font-script italic">Divinity</span> by carrying the presence of God into every space we enter, from local streets to global stages.
+              </p>
+              <p className="text-lg text-foreground/80 leading-relaxed text-balance">
+                We envision a world where pure worship inspires radical acts of love, service, and unity. Our commitment is to nurture a family defined by spiritual hunger, integrity, and an unwavering dependence on <span className="font-script italic">Grace</span>. Ultimately, every melody, every testimony, and every act of service points to our desire—seeing our generation touched, healed, and transformed by God’s love.
+              </p>
+            </div>
+          </Container>
+        </Section>
+
+
+        {/* Mission Section */}
         <Section className="bg-secondary/40 border-b py-16 md:py-32">
           <Container>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-sm">
                 <Image
-                  src="/images/origin-story.jpg"
-                  alt="DMC growth from 2018 to global movement"
+                  src="/bucket/1.jpeg"
+                  alt="Mission: worship and impact"
                   fill
                   className="object-cover"
                 />
               </div>
               <div>
                 <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-6 md:mb-8 text-balance">
-                  From a <span className="font-script italic">Seed</span> in Aba to a <span className="font-script italic">Global</span> Voice
+                  Our <span className="font-script italic text-primary">Mission</span>
                 </h2>
                 <div className="space-y-4 md:space-y-6">
                   <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                    Every great move of God begins with a simple act of obedience.
+                    Our mission is to gather, empower, and send out a thriving family of worshippers committed to transforming lives through music and practical service.
                   </p>
                   <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                    Divinity Music Crew (DMC) was birthed on <span className="font-semibold">August 10, 2018</span>, in the vibrant city of <span className="font-semibold">Aba, Abia State, Nigeria</span>. What began as a local gathering of believers has blossomed into a global movement, recording hundreds of participants annually and crossing borders with a singular message of <span className="font-script italic">hope</span>.
+                    We exist to <span className="font-script italic">bridge the gap</span> between Heaven and Earth—leading people into authentic encounters with God and releasing blessings that meet real needs in our communities.
                   </p>
-                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                    We didn't set out just to start a band. We set out to build a <span className="font-semibold">family</span>. Over the years, our growth hasn't been defined by fame, but by the lives touched, the souls won, and the communities uplifted. We operate with a total dependence on <span className="font-script italic">Grace</span>, acknowledging that every melody we sing and every life we impact is a testament to God's faithfulness.
-                  </p>
+                  <ul className="list-disc ml-5 space-y-2 text-lg text-foreground/80 leading-relaxed">
+                    <li>
+                      Using <span className="font-script italic">music</span> as a vessel to inspire hope, faith, and devotion.
+                    </li>
+                    <li>
+                      Demonstrating the love of Christ through acts of service, compassion, and charity.
+                    </li>
+                    <li>
+                      Raising a generation that pursues <span className="font-script italic">worship</span> and <span className="font-script italic">service</span> as inseparable callings.
+                    </li>
+                  </ul>
                 </div>
-              </div>
-            </div>
-          </Container>
-        </Section>
-
-        {/* Philosophy Section */}
-        <Section className="bg-background border-b py-16 md:py-32">
-          <Container>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div>
-                <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-balance">
-                  <span className="font-script italic">Worship</span> to Divinity. <span className="font-script italic">Blessings</span> to Humanity.
-                </h2>
-                <h3 className="text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
-                  Bridging the Gap Between the <span className="font-script italic">Spiritual</span> and the Physical
-                </h3>
-                <div className="space-y-4 md:space-y-6">
-                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                    In the world of gospel music, it is easy to focus solely on the "Spiritual Impact"—the song, the sound, the atmosphere. But at DMC, we believe the Gospel is holistic. It must feed the <span className="font-script italic">soul</span> <span className="font-semibold">and</span> the <span className="font-script italic">body</span>.
-                  </p>
-                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                    Our ministry is built on a <span className="font-semibold">Dual-Purpose Vision</span> inspired by the Holy Spirit:
-                  </p>
-                  <div className="space-y-3 md:space-y-4">
-                    <div className="p-4 md:p-5 bg-secondary/30 rounded-lg">
-                      <h4 className="font-semibold mb-2 text-sm md:text-base">To The Kingdom</h4>
-                      <p className="text-foreground/70 text-xs md:text-sm">
-                        We offer high-energy, spirit-filled worship that connects men to God.
-                      </p>
-                    </div>
-                    <div className="p-4 md:p-5 bg-secondary/30 rounded-lg">
-                      <h4 className="font-semibold mb-2 text-sm md:text-base">To Society</h4>
-                      <p className="text-foreground/70 text-xs md:text-sm">
-                        We offer tangible physical impact that connects the Church to the streets.
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                    We don't just sing about <span className="font-script italic">love</span>; we demonstrate it. Through our flagship Charity Worship Festival, we turn our praise into power—raising funds to support non-profits, educational projects, and individuals in need.
-                  </p>
-                </div>
-              </div>
-              <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-sm">
-                <Image
-                  src="/images/bridge-concept.jpg"
-                  alt="Bridge connecting spiritual and physical"
-                  fill
-                  className="object-cover"
-                />
               </div>
             </div>
           </Container>
@@ -130,7 +123,7 @@ export default function About() {
         {/* 7 Pillars Section */}
         <Section className="bg-secondary/40 border-b py-16 md:py-32">
           <Container>
-            <div className="text-center mb-12 md:mb-16">
+            <div className="text-center mb-10 md:mb-16">
               <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-balance">
                 The Values That Sustain Us
               </h2>
@@ -139,36 +132,35 @@ export default function About() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-6 md:mb-8">
+            {/* Desktop: 4 columns, Mobile: stack vertically. */}
+            <div className="flex flex-col gap-6 md:grid md:grid-cols-4 md:gap-10 mb-10 md:mb-16">
               {[
                 { icon: Heart, title: 'Love', description: 'The foundation of our existence and the motive behind our music.' },
                 { icon: MessageSquare, title: 'Prayers', description: 'The engine room where our power is generated.' },
                 { icon: Shield, title: 'Holiness', description: 'The standard of living we uphold, on and off the stage.' },
                 { icon: Zap, title: 'Passion', description: 'The relentless energy we bring to the Kingdom.' },
-              ].map((pillar) => {
-                const Icon = pillar.icon
-                return (
-                  <div key={pillar.title} className="p-4 md:p-6 bg-white border border-border rounded-lg hover:bg-secondary/10 transition-colors duration-300">
-                    <Icon className="w-10 md:w-12 h-10 md:h-12 text-foreground/50 mb-4" strokeWidth={1.5} />
-                    <h3 className="text-lg md:text-xl font-script italic font-semibold mb-2 md:mb-3">{pillar.title}</h3>
-                    <p className="text-foreground/70 text-xs md:text-sm leading-relaxed">{pillar.description}</p>
-                  </div>
-                )
-              })}
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-              {[
                 { icon: Lightbulb, title: 'Commitment', description: 'Our unwavering loyalty to the vision and to one another.' },
                 { icon: Users, title: 'Service', description: 'The evidence of our faith. We lead by serving.' },
-                { icon: Globe, title: 'Humanity', description: 'Because people are the priority of Heaven.' },
-              ].map((pillar) => {
+                { icon: Users, title: 'Humanity', description: 'Because people are the priority of Heaven.' },
+              ].map((pillar, idx) => {
                 const Icon = pillar.icon
+
+                // To achieve up to 4 columns while distributing 6 items,
+                // group into two rows if needed for larger screens.
+                // We'll force wrapping after the 4th item.
                 return (
-                  <div key={pillar.title} className="p-4 md:p-6 bg-white border border-border rounded-lg hover:bg-secondary/10 transition-colors duration-300">
-                    <Icon className="w-10 md:w-12 h-10 md:h-12 text-foreground/50 mb-4" strokeWidth={1.5} />
+                  <div
+                    key={pillar.title}
+                    className="text-center p-4 md:p-6 hover:bg-secondary/20 rounded-lg transition-colors duration-300 w-full"
+                    style={idx === 4 && typeof window !== 'undefined' ? { gridColumnStart: 1 } : {}}
+                  >
+                    <div className="flex justify-center mb-4 md:mb-6">
+                      <span className="flex items-center justify-center rounded-full bg-primary/10 size-18">
+                        <Icon className="w-8 md:w-10 h-8 md:h-10 text-primary" strokeWidth={1.5} />
+                      </span>
+                    </div>
                     <h3 className="text-lg md:text-xl font-script italic font-semibold mb-2 md:mb-3">{pillar.title}</h3>
-                    <p className="text-foreground/70 text-xs md:text-sm leading-relaxed">{pillar.description}</p>
+                    <p className="text-foreground/70 text-xs md:text-sm mx-auto max-w-xs">{pillar.description}</p>
                   </div>
                 )
               })}
@@ -176,90 +168,83 @@ export default function About() {
           </Container>
         </Section>
 
-        {/* All-In Pledge Section */}
+        {/* Team Members Gallery */}
         <Section className="bg-background border-b py-16 md:py-32">
           <Container>
-            <div className="max-w-3xl mx-auto">
-              <div className="text-center mb-12 md:mb-16">
-                <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-balance">
-                  A Radical Commitment to <span className="font-script italic">Integrity</span>
-                </h2>
-                <h3 className="text-lg md:text-xl text-muted-foreground">
-                  The "All-In" <span className="font-script italic">Pledge</span>
-                </h3>
-              </div>
-
-              <div className="bg-white border border-border rounded-lg p-6 md:p-12 mb-10 md:mb-12 shadow-sm">
-                <p className="text-lg text-foreground/80 leading-relaxed text-balance mb-8 text-center">
-                  We know that trust is earned. That is why DMC operates differently from many other organizations.
-                </p>
-                <div className="text-center mb-10 md:mb-12">
-                  <p className="text-2xl md:text-3xl font-light mb-4 text-foreground">
-                    Our <span className="font-script italic">Pledge</span> is Simple:
-                  </p>
-                  <p className="text-5xl md:text-7xl font-light mb-6 text-primary">100%</p>
-                  <p className="text-lg md:text-xl font-light text-foreground mb-6">
-                    <span className="font-script italic">For Charity</span>
-                  </p>
-                  <p className="text-base md:text-base text-foreground/70 mb-6">
-                    We have a strict policy that <span className="font-semibold">ALL</span> funds and proceeds generated from our projects are directed strictly toward charity outreaches and support.
-                  </p>
-                  <div className="space-y-2 text-foreground/70 text-xs md:text-sm mb-8">
-                    <p><span className="font-semibold">Zero</span> percentage goes to overheads.</p>
-                    <p><span className="font-semibold">Zero</span> percentage goes to personal profit.</p>
-                  </div>
-                  <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                    When you support DMC, you aren't just funding a concert; you are funding educational scholarships, supporting orphanages, and providing relief to the vulnerable. We are merely the <span className="font-script italic">vessel</span>; the destination of your giving is always <span className="font-script italic">Humanity</span>.
-                  </p>
-                </div>
-              </div>
-
-              <div className="text-center">
-                <Button variant="outline" className="gap-2 bg-transparent text-sm md:text-base px-6 md:px-8">
-                  See Our Impact →
-                </Button>
-              </div>
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-balance">
+                Meet Our <span className="font-script italic">Family</span>
+              </h2>
+              <p className="text-base md:text-lg text-muted-foreground">
+                The faces, hearts, and hands behind the movement
+              </p>
             </div>
-          </Container>
-        </Section>
-
-        {/* Mission & Vision Section */}
-        <Section className="bg-secondary/40 border-b py-16 md:py-32">
-          <Container>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-sm">
-                <Image
-                  src="/images/worship-crowd.jpg"
-                  alt="Worship crowd with raised hands"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div>
-                <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-6 md:mb-8 text-balance">
-                  Where We Are <span className="font-script italic">Going</span>
-                </h2>
-
-                <div className="space-y-8 md:space-y-10">
-                  <div>
-                    <h3 className="text-lg md:text-2xl font-light mb-3 md:mb-4">
-                      Our <span className="font-script italic">Vision</span>
-                    </h3>
-                    <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                      To see a world reached by the Gospel of Jesus Christ and Love, preached through the medium of music and acts of service. We are building toward a future of massive worship meetings and charity projects established across nations.
-                    </p>
-                  </div>
-
-                  <div>
-                    <h3 className="text-lg md:text-2xl font-light mb-3 md:mb-4">
-                      Our <span className="font-script italic">Mission</span>
-                    </h3>
-                    <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                      To connect humanity to Divinity through good music.
-                    </p>
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
+              {[
+                {
+                  name: "David Oluwadamilare",
+                  role: "Convener",
+                  image: "/bucket/3.jpeg",
+                },
+                {
+                  name: "Grace Adeyemi",
+                  role: "Lead Vocalist",
+                  image: "/placeholder-user.jpg",
+                },
+                {
+                  name: "Emmanuel Ibe",
+                  role: "Music Director",
+                  image: "/placeholder-user.jpg",
+                },
+                {
+                  name: "Sarah Olamide",
+                  role: "Outreach Coordinator",
+                  image: "/placeholder-user.jpg",
+                },
+                {
+                  name: "Joshua Bello",
+                  role: "Guitarist",
+                  image: "/placeholder-user.jpg",
+                },
+                {
+                  name: "Rebecca Edet",
+                  role: "Welfare",
+                  image: "/placeholder-user.jpg",
+                },
+                {
+                  name: "Deborah Ajayi",
+                  role: "Finance",
+                  image: "/placeholder-user.jpg",
+                },
+                {
+                  name: "Ikechukwu Onuoha",
+                  role: "Media",
+                  image: "/placeholder-user.jpg",
+                },
+              ].map((member) => (
+                <div
+                  key={member.name}
+                  className="relative rounded-lg overflow-hidden group shadow-md transition-transform duration-300 hover:scale-[1.025] aspect-4/6 flex"
+                >
+                  <Image
+                    src={member.image}
+                    alt={member.name}
+                    fill
+                    className="object-cover w-full h-full"
+                    sizes="(max-width: 768px) 100vw, 25vw"
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-black/75 via-black/35 to-transparent opacity-100 transition-opacity duration-300 flex flex-col justify-end items-start p-4">
+                    <div className="w-full text-left">
+                      <h3 className="text-white text-lg md:text-xl font-script italic font-semibold mb-1 drop-shadow">
+                        {member.name}
+                      </h3>
+                      <p className="text-xs md:text-sm text-white/90 drop-shadow">
+                        {member.role}
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
+              ))}
             </div>
           </Container>
         </Section>

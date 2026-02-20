@@ -63,3 +63,175 @@ Without including the navigation header, changing the current styling and curren
             </div>
           </Container>
         </Section>
+
+
+
+        -----
+
+
+
+                {/* Philosophy Section */}
+                <Section className="bg-background border-b py-16 md:py-32">
+                  <Container>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                      <div>
+                        <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-balance">
+                          <span className="font-script italic">Worship</span> to Divinity. <span
+                            className="font-script italic">Blessings</span> to Humanity.
+                        </h2>
+                        <h3 className="text-lg md:text-xl text-muted-foreground mb-6 md:mb-8">
+                          Bridging the Gap Between the <span className="font-script italic">Spiritual</span> and the Physical
+                        </h3>
+                        <div className="space-y-4 md:space-y-6">
+                          <p className="text-lg text-foreground/80 leading-relaxed text-balance">
+                            In the world of gospel music, it is easy to focus solely on the "Spiritual Impact"—the song, the sound, the
+                            atmosphere. But at DMC, we believe the Gospel is holistic. It must feed the <span
+                              className="font-script italic">soul</span> <span className="font-semibold">and</span> the <span
+                              className="font-script italic">body</span>.
+                          </p>
+                          <p className="text-lg text-foreground/80 leading-relaxed text-balance">
+                            Our ministry is built on a <span className="font-semibold">Dual-Purpose Vision</span> inspired by the Holy
+                            Spirit:
+                          </p>
+                          <div className="space-y-3 md:space-y-4">
+                            <div className="p-4 md:p-5 bg-secondary/30 rounded-lg">
+                              <h4 className="font-semibold mb-2 text-sm md:text-base">To The Kingdom</h4>
+                              <p className="text-foreground/70 text-xs md:text-sm">
+                                We offer high-energy, spirit-filled worship that connects men to God.
+                              </p>
+                            </div>
+                            <div className="p-4 md:p-5 bg-secondary/30 rounded-lg">
+                              <h4 className="font-semibold mb-2 text-sm md:text-base">To Society</h4>
+                              <p className="text-foreground/70 text-xs md:text-sm">
+                                We offer tangible physical impact that connects the Church to the streets.
+                              </p>
+                            </div>
+                          </div>
+                          <p className="text-lg text-foreground/80 leading-relaxed text-balance">
+                            We don't just sing about <span className="font-script italic">love</span>; we demonstrate it. Through our
+                            flagship Charity Worship Festival, we turn our praise into power—raising funds to support non-profits,
+                            educational projects, and individuals in need.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-sm">
+                        <Image src="/images/bridge-concept.jpg" alt="Bridge connecting spiritual and physical" fill
+                          className="object-cover" />
+                      </div>
+                    </div>
+                  </Container>
+                </Section>
+
+
+
+
+
+                <div className="flex flex-col divide-y divide-border">
+                  {[
+                  { icon: Lightbulb, title: 'Commitment', description: 'Our unwavering loyalty to the vision and to one another.' },
+                  { icon: Users, title: 'Service', description: 'The evidence of our faith. We lead by serving.' },
+                  { icon: Globe, title: 'Humanity', description: 'Because people are the priority of Heaven.' },
+                  ].map((pillar, idx, arr) => {
+                  const Icon = pillar.icon
+                  return (
+                  <div key={pillar.title} className="flex items-center gap-4 py-6 md:py-8">
+                    <Icon className="w-10 md:w-12 h-10 md:h-12 text-foreground/50 flex-shrink-0" strokeWidth={1.5} />
+                    <div>
+                      <h3 className="text-lg md:text-xl font-script italic font-semibold mb-1">{pillar.title}</h3>
+                      <p className="text-foreground/70 text-xs md:text-sm leading-relaxed">{pillar.description}</p>
+                    </div>
+                  </div>
+                  )
+                  })}
+                </div>
+
+                {/* All-In Pledge Section */}
+                <Section className="bg-background border-b py-16 md:py-32">
+                  <Container>
+                    <div className="max-w-3xl mx-auto">
+                      <div className="text-center mb-12 md:mb-16">
+                        <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-balance">
+                          A Radical Commitment to <span className="font-script italic">Integrity</span>
+                        </h2>
+                        <h3 className="text-lg md:text-xl text-muted-foreground">
+                          The "All-In" <span className="font-script italic">Pledge</span>
+                        </h3>
+                      </div>
+                
+                      <div className="bg-white border border-border rounded-lg p-6 md:p-12 mb-10 md:mb-12 shadow-sm">
+                        <p className="text-lg text-foreground/80 leading-relaxed text-balance mb-8 text-center">
+                          We know that trust is earned. That is why DMC operates differently from many other organizations.
+                        </p>
+                        <div className="text-center mb-10 md:mb-12">
+                          <p className="text-2xl md:text-3xl font-light mb-4 text-foreground">
+                            Our <span className="font-script italic">Pledge</span> is Simple:
+                          </p>
+                          <p className="text-5xl md:text-7xl font-light mb-6 text-primary">100%</p>
+                          <p className="text-lg md:text-xl font-light text-foreground mb-6">
+                            <span className="font-script italic">For Charity</span>
+                          </p>
+                          <p className="text-base md:text-base text-foreground/70 mb-6">
+                            We have a strict policy that <span className="font-semibold">ALL</span> funds and proceeds generated from
+                            our projects are directed strictly toward charity outreaches and support.
+                          </p>
+                          <div className="space-y-2 text-foreground/70 text-xs md:text-sm mb-8">
+                            <p><span className="font-semibold">Zero</span> percentage goes to overheads.</p>
+                            <p><span className="font-semibold">Zero</span> percentage goes to personal profit.</p>
+                          </div>
+                          <p className="text-lg text-foreground/80 leading-relaxed text-balance">
+                            When you support DMC, you aren't just funding a concert; you are funding educational scholarships,
+                            supporting orphanages, and providing relief to the vulnerable. We are merely the <span
+                              className="font-script italic">vessel</span>; the destination of your giving is always <span
+                              className="font-script italic">Humanity</span>.
+                          </p>
+                        </div>
+                      </div>
+                
+                      <div className="text-center">
+                        <Button variant="outline" className="gap-2 bg-transparent text-sm md:text-base px-6 md:px-8">
+                          See Our Impact →
+                        </Button>
+                      </div>
+                    </div>
+                  </Container>
+                </Section>
+
+
+
+                {/* Mission & Vision Section */}
+                <Section className="bg-secondary/40 border-b py-16 md:py-32">
+                  <Container>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+                      <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-sm">
+                        <Image src="/images/worship-crowd.jpg" alt="Worship crowd with raised hands" fill className="object-cover" />
+                      </div>
+                      <div>
+                        <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-6 md:mb-8 text-balance">
+                          Where We Are <span className="font-script italic">Going</span>
+                        </h2>
+                
+                        <div className="space-y-8 md:space-y-10">
+                          <div>
+                            <h3 className="text-lg md:text-2xl font-light mb-3 md:mb-4">
+                              Our <span className="font-script italic">Vision</span>
+                            </h3>
+                            <p className="text-lg text-foreground/80 leading-relaxed text-balance">
+                              To see a world reached by the Gospel of Jesus Christ and Love, preached through the medium of music and
+                              acts of service. We are building toward a future of massive worship meetings and charity projects
+                              established across nations.
+                            </p>
+                          </div>
+                
+                          <div>
+                            <h3 className="text-lg md:text-2xl font-light mb-3 md:mb-4">
+                              Our <span className="font-script italic">Mission</span>
+                            </h3>
+                            <p className="text-lg text-foreground/80 leading-relaxed text-balance">
+                              To connect humanity to Divinity through good music.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Container>
+                </Section>

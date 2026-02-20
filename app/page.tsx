@@ -94,10 +94,12 @@ export default function Home() {
           <Container>
             <div className="max-w-3xl mx-auto">
               <blockquote className="text-center relative">
-                <Quote
-                  size={80}
-                  className="mx-auto mb-5 text-primary opacity-70"
-                  aria-hidden="true"
+                <Image
+                  src="/icons/right-quote.svg"
+                  alt="Right Quote"
+                  width={80}
+                  height={80}
+                  className="mx-auto mb-5 text-primary"
                 />
                 <p className="text-3xl md:text-4xl font-light italic text-balance text-foreground mb-7">
                   "In a world where transparency is rare, we stand on a distinctive policy of <span className="font-script italic">integrity</span>.<br />

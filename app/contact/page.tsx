@@ -60,37 +60,7 @@ export default function ContactPage() {
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
         {/* Hero Section */}
-        <Section className="bg-background border-b py-16 md:py-32 overflow-hidden">
-          <Container>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="flex flex-col justify-center">
-                <h1 className="text-5xl md:text-7xl font-light tracking-tight mb-8 text-balance">
-                  Let's <span className="font-script italic">Connect</span>. Let's <span className="font-script italic">Build</span>.
-                </h1>
-                <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed text-balance">
-                  Whether you want to invite us to minister, partner with our charity projects, or simply share a <span className="font-script italic">testimony</span>—we are listening.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <Button size="lg" className="px-6 md:px-8 text-sm md:text-base">
-                    Send Us a Message
-                  </Button>
-                  <Button variant="outline" size="lg" className="px-6 md:px-8 bg-transparent text-sm md:text-base">
-                    Call Us
-                  </Button>
-                </div>
-              </div>
-              <div className="relative h-64 sm:h-80 md:h-full min-h-96 rounded-lg overflow-hidden">
-                <Image
-                  src="/images/contact-hero.jpg"
-                  alt="Warm welcoming team"
-                  fill
-                  className="object-cover"
-                  priority
-                />
-              </div>
-            </div>
-          </Container>
-        </Section>
+
 
         {/* Direct Channels Section */}
         <Section className="bg-secondary/40 border-b py-16 md:py-32">
@@ -118,7 +88,7 @@ export default function ContactPage() {
                       />
                     </div>
                     <div className="flex items-start gap-4 mb-4">
-                      <Icon className="w-8 h-8 md:w-10 md:h-10 text-foreground/50 flex-shrink-0 mt-1" strokeWidth={1.5} />
+                      <Icon className="w-8 h-8 md:w-10 md:h-10 text-foreground/50 shrink-0 mt-1" strokeWidth={1.5} />
                       <h3 className="text-xl md:text-2xl font-light">
                         <span className="font-script italic font-semibold">{channel.title}</span>
                       </h3>
@@ -265,7 +235,7 @@ export default function ContactPage() {
                   While our vision is global, our roots are local.
                 </p>
                 <div className="flex items-start gap-4">
-                  <MapPin className="w-6 h-6 text-foreground/50 flex-shrink-0 mt-1" strokeWidth={1.5} />
+                  <MapPin className="w-6 h-6 text-foreground/50 shrink-0 mt-1" strokeWidth={1.5} />
                   <div>
                     <p className="font-semibold text-base md:text-lg mb-1">Headquarters</p>
                     <p className="text-muted-foreground text-sm md:text-base">
@@ -283,7 +253,7 @@ export default function ContactPage() {
                   Available Mon-Fri, 9am - 5pm WAT
                 </p>
                 <div className="flex items-start gap-4">
-                  <Phone className="w-6 h-6 text-foreground/50 flex-shrink-0 mt-1" strokeWidth={1.5} />
+                  <Phone className="w-6 h-6 text-foreground/50 shrink-0 mt-1" strokeWidth={1.5} />
                   <div>
                     <p className="font-semibold text-base md:text-lg mb-1">Phone</p>
                     <Link

@@ -82,107 +82,93 @@ export default function Festival() {
           </Container>
         </Section>
 
-        {/* The Mission Section */}
-        <Section className="bg-secondary/40 border-b py-16 md:py-32">
+        {/* Vision & Mission Section */}
+        <Section className="bg-secondary/40 border-b py-12 md:py-32">
           <Container>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-              <div className="order-2 md:order-1 relative h-64 sm:h-80 md:h-full min-h-96 rounded-lg overflow-hidden shadow-sm">
-                <Image
-                  src="/images/mission-split.jpg"
-                  alt="Worship and service connection"
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="order-1 md:order-2">
-                <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-6 md:mb-8 text-balance">
-                  Your <span className="font-script italic">Worship</span> Has Hands and Feet.
-                </h2>
-                <p className="text-lg text-foreground/80 leading-relaxed text-balance mb-6 md:mb-8">
-                  We believe that true worship must lead to <span className="font-script italic">service</span>. That is why this gathering is unique. It is a "Dual-Purpose Vision" inspired by the Holy Spirit:
-                </p>
-                <div className="space-y-4 md:space-y-6 mb-8 md:mb-10">
-                  <div className="p-4 md:p-6 bg-white border border-border rounded-lg">
-                    <h3 className="font-semibold mb-2 text-sm md:text-base">
-                      <span className="font-script italic">We Gather</span>
-                    </h3>
-                    <p className="text-foreground/70 text-xs md:text-sm">
-                      To refill our spiritual vessels through praise and connection to the Divine.
+            {/* Responsive: stacks on mobile, side-by-side on md+ */}
+            <div className="flex flex-col gap-12 md:gap-16">
+              <div className="flex flex-col-reverse md:flex-row gap-10 md:gap-14 items-stretch">
+                
+                {/* Left: Vision, Mission, Dual Purpose */}
+                <div className="flex-1 flex flex-col justify-center space-y-8 sm:space-y-10 md:space-y-12">
+                  {/* Vision */}
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-script italic font-semibold text-secondary-foreground mb-2">Vision</h3>
+                    <p className="text-base xs:text-lg text-foreground/80 leading-relaxed text-balance">
+                      To bridge the gap between <span className="font-script italic">Heaven</span> and <span className="font-script italic">Earth</span>—igniting authentic worship that leads to practical love and service in our world.
                     </p>
                   </div>
-                  <div className="p-4 md:p-6 bg-white border border-border rounded-lg">
-                    <h3 className="font-semibold mb-2 text-sm md:text-base">
-                      <span className="font-script italic">We Give</span>
-                    </h3>
-                    <p className="text-foreground/70 text-xs md:text-sm">
-                      To refill the physical vessels of the needy through direct humanitarian action.
+                  {/* Mission */}
+                  <div>
+                    <h3 className="text-xl md:text-2xl font-script italic font-semibold text-secondary-foreground mb-2">Mission</h3>
+                    <p className="text-base xs:text-lg text-foreground/80 leading-relaxed text-balance mb-3 sm:mb-4">
+                      Our mission is to gather, empower, and send out a thriving family of worshippers committed to transforming lives through music and practical service.
                     </p>
+                    <ul className="list-disc ml-5 space-y-2 text-base xs:text-lg text-foreground/80 leading-relaxed">
+                      <li>
+                        Using <span className="font-script italic">music</span> as a vessel to inspire hope, faith, and devotion.
+                      </li>
+                      <li>
+                        Demonstrating the love of Christ through acts of service, compassion, and charity.
+                      </li>
+                      <li>
+                        Raising a generation that pursues <span className="font-script italic">worship</span> and <span className="font-script italic">service</span> as inseparable callings.
+                      </li>
+                    </ul>
+                  </div>
+                  {/* The Dual-Purpose Approach */}
+                  <div className="grid grid-cols-1 xs:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+                    <div className="p-4 sm:p-5 md:p-6 bg-white border border-border rounded-lg">
+                      <h4 className="font-semibold mb-2 text-sm md:text-base">
+                        <span className="font-script italic">We Gather</span>
+                      </h4>
+                      <p className="text-foreground/70 text-xs sm:text-sm md:text-base">
+                        To refill our spiritual vessels through praise and connection to the Divine.
+                      </p>
+                    </div>
+                    <div className="p-4 sm:p-5 md:p-6 bg-white border border-border rounded-lg">
+                      <h4 className="font-semibold mb-2 text-sm md:text-base">
+                        <span className="font-script italic">We Give</span>
+                      </h4>
+                      <p className="text-foreground/70 text-xs sm:text-sm md:text-base">
+                        To refill the physical vessels of the needy through direct humanitarian action.
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-base xs:text-lg text-foreground/80 leading-relaxed text-balance">
+                    This festival is the primary engine for our humanitarian work. The funds raised here don't just pay for a show—they pay for school fees, feed the hungry, and support <span className="font-script italic">nonprofits</span> that are changing the world.
+                  </p>
+                </div>
+
+                {/* Right: Illustrative Image */}
+                <div className="flex-1 flex items-center mb-6 md:mb-0">
+                  <div className="relative w-full h-60 xs:h-72 sm:h-80 md:h-[28rem] rounded-lg overflow-hidden shadow-sm border border-border">
+                    <Image
+                      src="/images/mission-split.jpg"
+                      alt="Worship and service connection"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 768px) 100vw, 50vw"
+                    />
                   </div>
                 </div>
-                <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                  This festival is the primary engine for our humanitarian work. The funds raised here don't just pay for a show—they pay for school fees, feed the hungry, and support <span className="font-script italic">nonprofits</span> that are changing the world.
-                </p>
-              </div>
-            </div>
-          </Container>
-        </Section>
-
-        {/* The All-In Guarantee */}
-        <Section className="bg-background border-b py-16 md:py-32">
-          <Container>
-            <div className="max-w-3xl mx-auto">
-              <div className="text-center mb-10 md:mb-16">
-                <div className="inline-block mb-6 md:mb-8">
-                  <div className="px-6 md:px-8 py-3 md:py-4 bg-primary text-primary-foreground rounded-lg border border-primary/20">
-                    <p className="text-sm md:text-base font-semibold">100% Policy</p>
-                  </div>
-                </div>
-                <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 md:mb-6 text-balance">
-                  The "All-In" <span className="font-script italic">Pledge</span>
-                </h2>
-                <h3 className="text-lg md:text-xl text-muted-foreground">
-                  Where Your Money Goes
-                </h3>
-              </div>
-
-              <div className="bg-white border border-border rounded-lg p-6 md:p-12 mb-8 md:mb-10 shadow-sm">
-                <p className="text-lg text-foreground/80 leading-relaxed text-balance mb-6 md:mb-8 text-center">
-                  We want you to worship with a free mind and a clear <span className="font-script italic">conscience</span>.
-                </p>
-                <p className="text-center text-xl md:text-2xl font-light mb-6 md:mb-8">
-                  <span className="text-4xl md:text-5xl font-light text-primary">100%</span>
-                  <br />
-                  of all proceeds, ticket sales, and offerings raised during this festival are strictly directed toward <span className="font-script italic">charity</span> outreaches.
-                </p>
-                <p className="text-lg text-foreground/80 leading-relaxed text-balance text-center mb-6 md:mb-8">
-                  We do not use festival proceeds to cover overheads. When you buy a ticket or sow a seed at the Charity Worship Festival, you are directly funding:
-                </p>
-                <div className="space-y-3 md:space-y-4 text-center">
-                  <p className="text-sm md:text-base">✓ Charity Organization Support</p>
-                  <p className="text-sm md:text-base">✓ Educational Projects</p>
-                  <p className="text-sm md:text-base">✓ Orphanage & Widow Relief</p>
-                </div>
-              </div>
-
-              <div className="text-center">
-                <Button variant="outline" className="gap-2 bg-transparent text-sm md:text-base px-6 md:px-8">
-                  Read About Our Financial Integrity →
-                </Button>
               </div>
             </div>
           </Container>
         </Section>
 
         {/* Event Details */}
-        <Section className="bg-secondary/40 border-b py-16 md:py-32">
+        <Section className="border-b py-16 md:py-32">
           <Container>
             <div className="max-w-3xl mx-auto">
-              <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-8 md:mb-12 text-center text-balance">
-                Mark Your <span className="font-script italic">Calendar</span>
-              </h2>
-              <p className="text-base md:text-lg text-muted-foreground">
-                Don't miss the next move of God.
-              </p>
+              <div className="text-center mb-8 md:mb-12">
+                <h2 className="text-3xl md:text-5xl font-light tracking-tight text-balance">
+                  Mark Your <span className="font-script italic">Calendar</span>
+                </h2>
+                <p className="text-base md:text-lg text-muted-foreground mt-4">
+                  Don't miss the next move of God.
+                </p>
+              </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-12 md:mb-16">
                 <div className="bg-white border border-border rounded-lg p-6 md:p-8 text-center shadow-sm">
@@ -202,12 +188,13 @@ export default function Festival() {
                 </div>
               </div>
 
-              <div className="text-center bg-white border border-border rounded-lg p-6 md:p-8">
-                <h3 className="font-semibold mb-4 text-sm md:text-base">Featuring</h3>
-                <p className="text-foreground/70 text-xs md:text-sm">
+              <div className="text-center mt-8 md:mt-12">
+                <h3 className="font-semibold mb-2 text-sm md:text-base">Featuring</h3>
+                <p className="text-foreground/70 text-sm">
                   The Divinity Music Crew & Special Guest Ministers
                 </p>
               </div>
+
             </div>
           </Container>
         </Section>
@@ -281,8 +268,7 @@ export default function Festival() {
               <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-10 md:mb-16 text-center text-balance">
                 Frequently Asked <span className="font-script italic">Questions</span>
               </h2>
-
-              <div className="space-y-3 md:space-y-4">
+              <div className="divide-y divide-border">
                 {[
                   {
                     question: 'Is the event free?',
@@ -305,22 +291,22 @@ export default function Festival() {
                     answer: 'Yes! This is a family-friendly event. We have a designated family section and activities for children. The atmosphere is welcoming for all ages.',
                   },
                 ].map((faq, index) => (
-                  <div key={index} className="border border-border rounded-lg overflow-hidden">
+                  <div key={index}>
                     <button
                       onClick={() => setOpenFaq(openFaq === index ? null : index)}
-                      className="w-full p-4 md:p-6 flex items-center justify-between hover:bg-secondary/20 transition-colors text-left"
+                      className="w-full py-4 md:py-6 flex items-center justify-between bg-transparent text-left focus:outline-none"
                     >
-                      <h3 className="font-semibold text-sm md:text-base pr-4">
+                      <span className="font-medium text-sm md:text-base pr-4 text-foreground">
                         {faq.question}
-                      </h3>
+                      </span>
                       <ChevronDown
-                        className={`w-5 h-5 flex-shrink-0 transition-transform ${
+                        className={`w-5 h-5 shrink-0 transition-transform ${
                           openFaq === index ? 'rotate-180' : ''
-                        }`}
+                        } text-foreground/70`}
                       />
                     </button>
                     {openFaq === index && (
-                      <div className="px-4 md:px-6 pb-4 md:pb-6 border-t border-border bg-secondary/20">
+                      <div className="pb-4 md:pb-6">
                         <p className="text-foreground/70 text-xs md:text-sm">{faq.answer}</p>
                       </div>
                     )}

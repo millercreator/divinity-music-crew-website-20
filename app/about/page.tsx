@@ -35,11 +35,12 @@ export default function About() {
               </div>
               <div className="relative h-64 sm:h-80 md:h-full min-h-96 rounded-lg overflow-hidden">
                 <Image
-                  src="/bucket/25.jpeg"
+                  src="images/aboutus2.png"
                   alt="Warm welcoming team"
                   fill
                   className="object-cover"
                   priority
+                  style = {{objectPosition: "top"}}
                 />
               </div>
             </div>
@@ -55,7 +56,7 @@ export default function About() {
             <div className="mb-10">
               {/* Collage Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-                {["/bucket/3.jpeg", "/bucket/4.jpeg", "/bucket/5.jpeg", "/bucket/6.jpeg"].map((i) => (
+                {["/bucket/24.jpeg", "/bucket/9.jpeg", "/bucket/37.jpeg", "/bucket/34.jpeg"].map((i) => (
                   <div key={i} className="relative aspect-square rounded overflow-hidden shadow">
                     <Image
                       src={i || ""}
@@ -86,10 +87,11 @@ export default function About() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-sm">
                 <Image
-                  src="/bucket/1.jpeg"
+                  src="/bucket/35.jpeg"
                   alt="Mission: worship and impact"
                   fill
                   className="object-cover"
+                   style = {{objectPosition: "top"}}
                 />
               </div>
               <div>
@@ -179,45 +181,93 @@ export default function About() {
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 md:gap-6 max-w-5xl mx-auto">
               {[
                 {
-                  name: "David Oluwadamilare",
-                  role: "Convener",
-                  image: "/bucket/3.jpeg",
+                  name: "Favour Ikpeazu (Graceboy)",
+                  role: "Founder/Director",
+                  part: "Vocals",
+                  status: "Active",
+                  image: "images/graceboy.jpg",
                 },
                 {
-                  name: "Grace Adeyemi",
-                  role: "Lead Vocalist",
-                  image: "/placeholder-user.jpg",
+                  name: "King Osinachi Erondu (King Trumpet)",
+                  role: "Team Manager",
+                  part: "Vocals/Trumpet",
+                  status: "Active",
+                  image: "images/Ossy.jpg",
                 },
                 {
-                  name: "Emmanuel Ibe",
-                  role: "Music Director",
-                  image: "/placeholder-user.jpg",
+                  name: "Nmesoma Emecheta",
+                  role: "Stage Director",
+                  part: "Piano/Keyboard, Bass Guitar",
+                  status: "Active",
+                  image: "images/nmeso.jpg",
                 },
                 {
-                  name: "Sarah Olamide",
-                  role: "Outreach Coordinator",
-                  image: "/placeholder-user.jpg",
+                  name: "Miracle Assumpta Nzeh",
+                  role: "Team Welfare Director",
+                  part: "Vocals",
+                  status: "Active",
+                  image: "images/assumpta.jpg",
                 },
                 {
-                  name: "Joshua Bello",
-                  role: "Guitarist",
-                  image: "/placeholder-user.jpg",
+                  name: "Grace Anyanwu",
+                  role: "Vocals",
+                  status: "Active",
+                  image: "images/grace.jpg",
                 },
                 {
-                  name: "Rebecca Edet",
-                  role: "Welfare",
-                  image: "/placeholder-user.jpg",
+                  name: "Ibeh Chidera Gift",
+                  role: "Vocals",
+                  status: "Active",
+                  image: "images/dera.jpg",
                 },
                 {
-                  name: "Deborah Ajayi",
-                  role: "Finance",
-                  image: "/placeholder-user.jpg",
+                  name: "Franklin Arinze Onwosi",
+                  role: "Drums",
+                  status: "Active",
+                  image: "images/Franklin.jpg",
                 },
                 {
-                  name: "Ikechukwu Onuoha",
-                  role: "Media",
-                  image: "/placeholder-user.jpg",
+                  name: "Ebuka Wilfred Ezeh",
+                  role: "Bass Guitar, Piano/Keyboard",
+                  status: "Active",
+                  image: "images/Clinton.jpg",
                 },
+                {
+                  name: "Ukpong Okon",
+                  role: "Drums",
+                  status: "Active",
+                  image: "images/ukpong.jpg",
+                },
+                {
+                  name: "Promise Effiong",
+                  role: "Drums",
+                  status: "Pioneer Member",
+                  image: "images/promise.jpg",
+                },
+                {
+                  name: "Miracle Idika",
+                  role: "Piano/Keyboard",
+                  status: "Pioneer Member",
+                  image: "images/sunday.jpg",
+                },
+                {
+                  name: "Chijioke Anyanwu",
+                  role: "Piano/Keyboard",
+                  status: "Pioneer Member",
+                  image: "images/chijioke.jpg",
+                },
+                {
+                name: "Esther Chiedozie-Stanley",
+                  role: "Vocals",
+                  status: "Pioneer Member",
+                  image: "images/esther.jpg",
+                },
+                {
+                name: "Emmanuella Ndukwo",
+                  role: "Vocals",
+                  status: "Pioneer Member",
+                  image: "images/ella.jpg",
+                }
               ].map((member) => (
                 <div
                   key={member.name}

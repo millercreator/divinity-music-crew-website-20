@@ -11,12 +11,12 @@ export default function Home() {
         <Section className="relative border-b overflow-hidden p-0 min-h-0 flex items-stretch">
           <div className="absolute inset-0 w-full h-full z-0">
             <Image
-              src="/images/hero-worship.jpg"
+              src="/bucket/16.jpeg"
               alt="People in worship with raised hands"
               fill
               className="object-cover object-center"
               priority
-              sizes="100vw"
+              style={{objectPosition: "top", objectFit: "cover"}}
             />
             <div className="absolute inset-0 pointer-events-none bg-black/40" />
           </div>
@@ -83,32 +83,6 @@ export default function Home() {
               <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                 We are a family defined by <span className="font-semibold">total dependence on <span className="font-script italic">Grace</span></span>. Whether we are on stage or in the streets, our mission remains the same: to gather souls, impact lives, and demonstrate that true worship always leads to <span className="font-script italic">service</span>.
               </p>
-            </div>
-          </Container>
-        </Section>
-
-        {/* All-In Pledge Section */}
-        <Section className="bg-background border-b py-24 md:py-40 flex items-center justify-center">
-          <Container>
-            <div className="max-w-3xl mx-auto">
-              <blockquote className="text-center relative">
-                <Image
-                  src="/icons/right-quote.svg"
-                  alt="Right Quote"
-                  width={80}
-                  height={80}
-                  className="mx-auto mb-5"
-                />
-                <p className="text-3xl md:text-4xl font-light italic text-balance text-foreground mb-7">
-                  "In a world where transparency is rare, we stand on a distinctive policy of <span className="font-script italic">integrity</span>.<br />
-                  <span className="font-medium text-secondary align-middle">
-                    100%
-                  </span> of all funds and proceeds go directly to <span className="font-script italic">charity</span>."
-                </p>
-                <footer className="text-md md:text-lg text-muted-foreground mt-2">
-                  — The "All-In" <span className="font-script italic">Promise</span>
-                </footer>
-              </blockquote>
             </div>
           </Container>
         </Section>

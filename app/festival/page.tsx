@@ -17,7 +17,7 @@ export default function Festival() {
         <Section className="bg-background border-b overflow-hidden relative h-screen md:h-auto md:min-h-screen">
           <div className="absolute inset-0">
             <Image
-              src="/images/festival-hero.jpg"
+              src="/images/cw1.jpg"
               alt="Massive crowd in worship"
               fill
               className="object-cover"
@@ -72,7 +72,7 @@ export default function Festival() {
               </div>
               <div className="relative h-64 sm:h-80 md:h-full min-h-96 rounded-lg overflow-hidden shadow-sm">
                 <Image
-                  src="/images/experience-moment.jpg"
+                  src="/images/cw2.jpg"
                   alt="Passionate worship moment"
                   fill
                   className="object-cover"
@@ -144,7 +144,7 @@ export default function Festival() {
                 <div className="flex-1 flex items-center mb-6 md:mb-0">
                   <div className="relative w-full h-60 xs:h-72 sm:h-80 md:h-[28rem] rounded-lg overflow-hidden shadow-sm border border-border">
                     <Image
-                      src="/images/mission-split.jpg"
+                      src="/images/cwl.jpg"
                       alt="Worship and service connection"
                       fill
                       className="object-cover"
@@ -174,7 +174,7 @@ export default function Festival() {
                 <div className="bg-white border border-border rounded-lg p-6 md:p-8 text-center shadow-sm">
                   <div className="text-4xl md:text-5xl mb-4 font-light">📅</div>
                   <h3 className="font-semibold mb-2 text-sm md:text-base">Date</h3>
-                  <p className="text-foreground/70 text-xs md:text-sm">August 10, 202X</p>
+                  <p className="text-foreground/70 text-xs md:text-sm">August 8, 2026</p>
                 </div>
                 <div className="bg-white border border-border rounded-lg p-6 md:p-8 text-center shadow-sm">
                   <div className="text-4xl md:text-5xl mb-4 font-light">📍</div>
@@ -184,7 +184,7 @@ export default function Festival() {
                 <div className="bg-white border border-border rounded-lg p-6 md:p-8 text-center shadow-sm">
                   <div className="text-4xl md:text-5xl mb-4 font-light">⏰</div>
                   <h3 className="font-semibold mb-2 text-sm md:text-base">Time</h3>
-                  <p className="text-foreground/70 text-xs md:text-sm">Doors: 4 PM | Worship: 5 PM</p>
+                  <p className="text-foreground/70 text-xs md:text-sm">Doors: 7 PM | Worship: 8 PM</p>
                 </div>
               </div>
 
@@ -214,7 +214,7 @@ export default function Festival() {
 
               <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-sm mb-10 md:mb-12">
                 <Image
-                  src="/images/impact-previous.jpg"
+                  src="/images/fp1.jpg"
                   alt="Previous festival impact"
                   fill
                   className="object-cover"
@@ -223,9 +223,9 @@ export default function Festival() {
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
                 {[
-                  { number: '500+', label: 'Students Supported' },
                   { number: '2000+', label: 'Attendees Blessed' },
-                  { number: '$50K+', label: 'Raised for Charity' },
+                  { number: '200K+', label: 'Raised for Charity' },
+                  { number: '20+', label: 'Lives saved for God' },
                 ].map((stat, index) => (
                   <div key={index} className="text-center p-4 md:p-6 bg-secondary/40 rounded-lg">
                     <p className="text-3xl md:text-4xl font-light text-primary mb-2">

@@ -6,17 +6,23 @@ import { mainNavItems } from '@/constants/navigation'
 import { siteConfig } from '@/config/site'
 import { Button } from '@/components/ui/button'
 import { Menu, X } from 'lucide-react'
+import Image from 'next/image'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60">
       <div className="container mx-auto px-4 h-14 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2 flex-shrink-0">
-          <div className="w-6 h-6 bg-primary rounded-full" />
-          <span className="font-bold hidden sm:inline text-sm md:text-base">{siteConfig.name}</span>
+        <Link href="/" className="flex items-center space-x-2 shrink-0">
+          <Image
+            width={70}
+            height={400}
+            src="/dmc-logo.jpg"
+            alt={siteConfig.name}
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}

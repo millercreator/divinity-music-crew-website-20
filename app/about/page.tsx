@@ -167,7 +167,7 @@ export default function About() {
           </Container>
         </Section>
 
-        {/* Team Members Gallery */}
+        {/* Team Members Media */}
         <Section className="bg-background border-b py-16 md:py-32">
           <Container>
             <div className="text-center mb-12 md:mb-16">

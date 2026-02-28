@@ -14,8 +14,8 @@ export const mainNavItems: NavItem[] = [
     href: '/festival',
   },
   {
-    title: 'Gallery',
-    href: '/gallery',
+    title: 'Media',
+    href: '/media',
   },
   {
     title: 'Contact',
@@ -37,8 +37,8 @@ export const footerNavItems: NavItem[] = [
     href: '/festival',
   },
   {
-    title: 'Gallery',
-    href: '/gallery',
+    title: 'Media',
+    href: '/media',
   },
   {
     title: 'Contact',

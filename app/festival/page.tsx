@@ -41,9 +41,19 @@ export default function Festival() {
                   <Button size="lg" className="px-6 md:px-8 text-sm md:text-base bg-white text-primary hover:bg-secondary">
                     Save My Seat
                   </Button>
-                  <Button size="lg" variant="outline" className="px-6 md:px-8 text-sm md:text-base text-white border-white hover:bg-white/10 bg-transparent">
-                    Donate to the Cause
+                  <a 
+                   href="https://forms.gle/PqU7QvFTWeE6TpBf6" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+>
+                    <Button 
+                   size="lg" 
+                    variant="outline" 
+                    className="px-6 md:px-8 text-sm md:text-base text-white border-white hover:bg-white/10 bg-transparent"
+                    >
+                      Donate to the Cause
                   </Button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -65,9 +75,6 @@ export default function Festival() {
                   <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     Expect high-energy praise, deep soul-stirring <span className="font-script italic">worship</span>, and a community of believers united by <span className="font-semibold">Passion</span> and <span className="font-semibold">Holiness</span>. Whether you have been with us since our first gathering in Aba in 2018 or this is your first time, come ready to pour out your heart.
                   </p>
-                  <Button className="mt-4 md:mt-6 text-sm md:text-base px-6 md:px-8">
-                    Learn About Our History
-                  </Button>
                 </div>
               </div>
               <div className="relative h-64 sm:h-80 md:h-full min-h-96 rounded-lg overflow-hidden shadow-sm">
@@ -95,14 +102,15 @@ export default function Festival() {
                   <div>
                     <h3 className="text-xl md:text-2xl font-script italic font-semibold text-secondary-foreground mb-2">Vision</h3>
                     <p className="text-base xs:text-lg text-foreground/80 leading-relaxed text-balance">
-                      To bridge the gap between <span className="font-script italic">Heaven</span> and <span className="font-script italic">Earth</span>—igniting authentic worship that leads to practical love and service in our world.
+                    <strong>Gathering Souls and Imapcting Lives Globally through Massive Worship Meetings and Charity Projects across different Nations.</strong>
+                        To bridge the gap between <span className="font-script italic">Heaven</span> and <span className="font-script italic">Earth</span>—igniting authentic worship that leads to practical love and service in our world.
                     </p>
                   </div>
                   {/* Mission */}
                   <div>
                     <h3 className="text-xl md:text-2xl font-script italic font-semibold text-secondary-foreground mb-2">Mission</h3>
                     <p className="text-base xs:text-lg text-foreground/80 leading-relaxed text-balance mb-3 sm:mb-4">
-                      Our mission is to gather, empower, and send out a thriving family of worshippers committed to transforming lives through music and practical service.
+                      Our mission is <strong>Worship to Divinity Almighty and Blessings to Humanity.</strong>
                     </p>
                     <ul className="list-disc ml-5 space-y-2 text-base xs:text-lg text-foreground/80 leading-relaxed">
                       <li>
@@ -136,7 +144,7 @@ export default function Festival() {
                     </div>
                   </div>
                   <p className="text-base xs:text-lg text-foreground/80 leading-relaxed text-balance">
-                    This festival is the primary engine for our humanitarian work. The funds raised here don't just pay for a show—they pay for school fees, feed the hungry, and support <span className="font-script italic">nonprofits</span> that are changing the world.
+                    This festival is the primary engine for our humanitarian work. The funds raised here do not just pay for a show—they pay for school fees, feed the hungry, and support <span className="font-script italic">nonprofits</span> that are changing the world.
                   </p>
                 </div>
 
@@ -174,12 +182,12 @@ export default function Festival() {
                 <div className="bg-white border border-border rounded-lg p-6 md:p-8 text-center shadow-sm">
                   <div className="text-4xl md:text-5xl mb-4 font-light">📅</div>
                   <h3 className="font-semibold mb-2 text-sm md:text-base">Date</h3>
-                  <p className="text-foreground/70 text-xs md:text-sm">August 8, 2026</p>
+                  <p className="text-foreground/70 text-xs md:text-sm">August 14, 2026</p>
                 </div>
                 <div className="bg-white border border-border rounded-lg p-6 md:p-8 text-center shadow-sm">
                   <div className="text-4xl md:text-5xl mb-4 font-light">📍</div>
                   <h3 className="font-semibold mb-2 text-sm md:text-base">Location</h3>
-                  <p className="text-foreground/70 text-xs md:text-sm">[Venue Name & City]</p>
+                  <p className="text-foreground/70 text-xs md:text-sm">[Venue Name & Aba, Abia State]</p>
                 </div>
                 <div className="bg-white border border-border rounded-lg p-6 md:p-8 text-center shadow-sm">
                   <div className="text-4xl md:text-5xl mb-4 font-light">⏰</div>
@@ -199,45 +207,83 @@ export default function Festival() {
           </Container>
         </Section>
 
-        {/* Impact Showcase */}
-        <Section className="bg-background border-b py-16 md:py-32">
-          <Container>
-            <div className="max-w-3xl mx-auto">
-              <div className="text-center mb-10 md:mb-16">
-                <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 md:mb-6 text-balance">
-                  What We <span className="font-script italic">Achieved</span>
-                </h2>
-                <p className="text-base md:text-lg text-muted-foreground">
-                  Real <span className="font-script italic">impact</span> from the last festival
-                </p>
-              </div>
+       {/* Impact Showcase */}
+<Section className="bg-background border-b py-16 md:py-32">
+  <Container>
+    <div className="max-w-3xl mx-auto">
+      
+      {/* Header */}
+      <div className="text-center mb-10 md:mb-16">
+        <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 md:mb-6 text-balance">
+          What We <span className="font-script italic">Achieved</span>
+        </h2>
+        <p className="text-base md:text-lg text-muted-foreground">
+          Real <span className="font-script italic">impact</span> from the last festival
+        </p>
+      </div>
 
-              <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-sm mb-10 md:mb-12">
-                <Image
-                  src="/images/fp1.jpg"
-                  alt="Previous festival impact"
-                  fill
-                  className="object-cover"
-                />
-              </div>
+      {/* NEW: Intro Text */}
+      <div className="mb-8 md:mb-10 text-center">
+        <p className="text-lg text-foreground/80 leading-relaxed">
+          Since inception in 2018, we have been able to reach out to, and be a blessing to JOYRITA MOTHERLESS BABIES HOME ABA, 
+          DAUGHTERS OF ZION MOTHERLESS BABIES HOME ABA, NGWA ROAD MOTHERLESS BABIES HOME ABA AND WORSHIP IN ACTION (WIA), UNITED STATES. 
+          Also in 2021 and 2022 we were able to support some students and schools outreach programmes, and we hope to do more.
+           The above are some of the beneficiaries of ALL THE PROCEEDS of the project over the years.
+        </p>
+         <p className="text-lg text-foreground/80 leading-relaxed">
+          Because of your <span className="font-script italic">worship</span> and 
+          <span className="font-script italic"> generosity</span>, lives were not only touched 
+          spiritually but transformed physically. Every song raised, every seed sown, 
+          created a ripple effect of hope across communities.
+        </p>
+      </div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-                {[
-                  { number: '2000+', label: 'Attendees Blessed' },
-                  { number: '200K+', label: 'Raised for Charity' },
-                  { number: '20+', label: 'Lives saved for God' },
-                ].map((stat, index) => (
-                  <div key={index} className="text-center p-4 md:p-6 bg-secondary/40 rounded-lg">
-                    <p className="text-3xl md:text-4xl font-light text-primary mb-2">
-                      {stat.number}
-                    </p>
-                    <p className="text-xs md:text-sm text-foreground/70">{stat.label}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </Container>
-        </Section>
+      {/* Image */}
+      <div className="relative h-64 sm:h-80 md:h-96 rounded-lg overflow-hidden shadow-sm mb-10 md:mb-12">
+        <Image
+          src="/images/fp1.jpg"
+          alt="Previous festival impact"
+          fill
+          className="object-cover"
+        />
+      </div>
+
+      {/* NEW: Mid Supporting Text */}
+      <div className="mb-10 md:mb-12 text-center">
+        <p className="text-base md:text-lg text-foreground/70 leading-relaxed">
+          From feeding families to supporting education and restoring dignity, 
+          this is what happens when <span className="font-script italic">worship meets action</span>.
+        </p>
+      </div>
+
+      {/* Stats */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+        {[
+          { number: '2000+', label: 'Attendees Blessed' },
+          { number: '200K+', label: 'Raised for Charity' },
+          { number: '20+', label: 'Lives saved for God' },
+        ].map((stat, index) => (
+          <div key={index} className="text-center p-4 md:p-6 bg-secondary/40 rounded-lg">
+            <p className="text-3xl md:text-4xl font-light text-primary mb-2">
+              {stat.number}
+            </p>
+            <p className="text-xs md:text-sm text-foreground/70">{stat.label}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* NEW: Closing Text */}
+      <div className="mt-10 md:mt-14 text-center">
+        <p className="text-lg text-foreground/80 leading-relaxed">
+          And this is just the beginning. With your continued support, we are set to reach 
+          even more lives, spread more love, and make an even greater 
+          <span className="font-script italic"> impact</span> this year.
+        </p>
+      </div>
+
+    </div>
+  </Container>
+</Section>
 
         {/* Sponsorship Section */}
         <Section className="bg-secondary/40 border-b py-16 md:py-32">
@@ -253,9 +299,17 @@ export default function Festival() {
                 By sponsoring this event, you aren't just getting brand visibility; you are aligning your organization with a movement of <span className="font-semibold">Love, <span className="font-script italic">Service</span>, and <span className="font-script italic">Humanity</span></span>. Help us cover the logistics so that every single penny raised from the crowd can go to the poor.
               </p>
               <div className="text-center">
-                <Button size="lg" className="text-sm md:text-base px-6 md:px-8">
-                  Become a Sponsor
-                </Button>
+               <a 
+                   href="https://forms.gle/Pnz6W9MefnjUxTSJ9" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <Button 
+                   size="lg" 
+                    variant="outline" 
+                    className="px-6 md:px-8 text-sm md:text-base text-white border-white hover:bg-white/10 bg-transparent">
+                    Become a sponsor
+                  </Button>
+                  </a>
               </div>
             </div>
           </Container>
@@ -328,16 +382,17 @@ export default function Festival() {
                 Come for the music. Stay for the <span className="font-script italic">mission</span>. Let's raise a sound that Heaven hears and a support system that the Earth feels.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
-                <Button size="lg" variant="secondary" className="px-6 md:px-8 text-sm md:text-base">
-                  Register Now
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="px-6 md:px-8 text-primary-foreground border-primary-foreground hover:bg-primary-foreground/10 bg-transparent text-sm md:text-base"
-                >
-                  Give an Offering
-                </Button>
+                 <a 
+                   href="https://forms.gle/PqU7QvFTWeE6TpBf6" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <Button 
+                   size="lg" 
+                    variant="outline" 
+                    className="px-6 md:px-8 text-sm md:text-base text-white border-white hover:bg-white/10 bg-transparent">
+                      Give an offering
+                  </Button>
+                  </a>
               </div>
             </div>
           </Container>

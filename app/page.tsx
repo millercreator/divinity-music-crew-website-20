@@ -4,6 +4,13 @@ import { Container } from '@/components/common/container'
 import { Section } from '@/components/common/section'
 
 export default function Home() {
+   const bucket = [
+              "/bucket/19.jpeg",
+              "/bucket/36.jpg",
+              "/bucket/40.jpg",
+              "/bucket/41.jpg",
+            ];
+            
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
@@ -46,9 +53,19 @@ export default function Home() {
                 <Button variant={"secondary"} size="lg" className="w-full xs:w-auto">
                   Join Our Next Worship Night
                 </Button>
-                <Button variant="outline" size="lg" className="w-full xs:w-auto">
-                  Support Our Charity
-                </Button>
+               <a 
+                   href="https://forms.gle/PqU7QvFTWeE6TpBf6" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+>
+                    <Button 
+                   size="lg" 
+                    variant="outline" 
+                    className="px-6 md:px-8 text-sm md:text-base text-white border-white hover:bg-white/10 bg-transparent"
+                    >
+                      Donate to the Cause
+                  </Button>
+                  </a>
               </div>
             </Container>
           </div>
@@ -61,24 +78,24 @@ export default function Home() {
               Connecting <span className="font-script italic text-primary">Humanity</span> to <span className="font-script italic text-yellow-500">Divinity</span> Through Good Music
             </h2>
             <div className="mb-10">
-              {/* Collage Grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
-                {[1, 2, 3, 4].map((i) => (
-                  <div key={i} className="relative aspect-square rounded overflow-hidden shadow">
-                    <Image
-                      src="/images/hero-worship.jpg"
-                      alt={`Collage ${i}`}
-                      fill
-                      className="object-cover object-center"
-                      sizes="(min-width: 768px) 25vw, 50vw"
-                    />
-                  </div>
-                ))}
-              </div>
+              {/* Collage Grid */} 
+<div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
+  {bucket.map((src, i) => (
+    <div key={i} className="relative aspect-square rounded overflow-hidden shadow">
+      <Image
+        src={src}
+        alt={`Collage ${i + 1}`}
+        fill
+        className="object-cover object-center"
+        sizes="(min-width: 768px) 25vw, 50vw"
+      />
+    </div>
+  ))}
+</div>
             </div>
             <div className="space-y-6">
               <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                We believe music is a <span className="font-script italic">vessel</span>. Since our origin in Aba, Abia State, in 2018, Divinity Music Crew (DMC) has grown from a local gathering into a global evangelical movement. But we don't just sing to fill the airwaves; we sing to shift atmospheres.
+                We believe music is a <span className="font-script italic">vessel</span>. Since our origin in Aba, Abia State, in 2017, Divinity Music Crew (DMC) has grown from a local gathering into a global evangelical movement. But we do not just sing to fill the airwaves; we sing to shift atmospheres.
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                 We are a family defined by <span className="font-semibold">total dependence on <span className="font-script italic">Grace</span></span>. Whether we are on stage or in the streets, our mission remains the same: to gather souls, impact lives, and demonstrate that true worship always leads to <span className="font-script italic">service</span>.
@@ -94,7 +111,7 @@ export default function Home() {
               <div className="order-2 md:order-1">
                 <div className="relative aspect-5/3 w-full rounded-lg overflow-hidden shadow-sm">
                   <Image
-                    src="/images/festival.jpg"
+                    src="/images/home-ch1.jpg"
                     alt="Charity Worship Festival stage"
                     fill
                     className="object-cover"
@@ -144,12 +161,17 @@ export default function Home() {
                 Whether you lift your voice in <span className="font-script italic">worship</span> with us or sow a <span className="font-script italic">seed</span> into our charity projects, you are helping connect Divinity to Humanity.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                <Button size="lg" variant="secondary" className="px-6 md:px-8 text-sm md:text-base">
-                  Donate to the Cause
-                </Button>
-                <Button size="lg" variant="outline" className="px-6 md:px-8 text-primary-foreground border-primary-foreground hover:bg-primary-foreground/10 bg-transparent text-sm md:text-base">
-                  Contact Us
-                </Button>
+                 <a 
+                   href="https://forms.gle/PqU7QvFTWeE6TpBf6" 
+                    target="_blank" 
+                    rel="noopener noreferrer">
+                    <Button 
+                   size="lg" 
+                    variant="outline" 
+                    className="px-6 md:px-8 text-sm md:text-base text-white border-white hover:bg-white/10 bg-transparent">
+                      Donate to the Cause
+                  </Button>
+                  </a>
               </div>
             </div>
           </Container>

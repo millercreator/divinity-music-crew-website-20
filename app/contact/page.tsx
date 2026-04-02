@@ -37,22 +37,22 @@ export default function ContactPage() {
       icon: Mic2,
       title: 'Ministry & Bookings',
       description: 'Looking to bring the Divinity Music Crew to your city, church, or conference? We are ready to labor with you in worship.',
-      email: 'bookings@divinitymusic.com',
-      image: '/images/contact-booking.jpg',
+      email: 'divinitymusiccrew4@gmail.com',
+      image: '/bucket/con1.jpg',
     },
     {
       icon: Handshake,
       title: 'Charity & Partnerships',
       description: 'Interested in supporting the Charity Worship Festival or partnering with us to aid the vulnerable? Let\'s discuss how we can impact Humanity together.',
-      email: 'partners@divinitymusic.com',
-      image: '/images/contact-partnership.jpg',
+      email: 'divinitymusiccrew4@gmail.com',
+      image: '/bucket/con3.jpg',
     },
     {
       icon: Hands,
       title: 'Prayer & Testimonies',
       description: 'Do you have a testimony of what God did through our music? Or do you need a family to agree with you in prayer? We are here for you.',
-      email: 'care@divinitymusic.com',
-      image: '/images/contact-prayer.jpg',
+      email: 'divinitymusiccrew4@gmail.com',
+      image: '/bucket/con2.jpg',
     },
   ]
 
@@ -159,7 +159,7 @@ export default function ContactPage() {
                       onChange={handleChange}
                       required
                       className="w-full px-4 py-3 bg-secondary border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 text-sm md:text-base"
-                      placeholder="your@email.com"
+                      placeholder="divinitymusiccrew4@gmail.com"
                     />
                   </div>
                 </div>
@@ -257,12 +257,12 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-base md:text-lg mb-1">Phone</p>
                     <Link
-                      href="tel:+234123456789"
+                      href="tel:+2348099054997"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-primary hover:text-foreground transition-colors text-sm md:text-base"
                     >
-                      +234 (0) 123 456 789
+                      +234 (0) 809 905 4997 ||  +234 (0) 816 902 5090
                     </Link>
                   </div>
                 </div>
@@ -283,14 +283,6 @@ export default function ContactPage() {
               </p>
               <div className="flex flex-wrap justify-center gap-4 md:gap-6">
                 <Link
-                  href="https://instagram.com/divinitymusic"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 md:px-8 py-3 bg-primary-foreground text-primary rounded-lg font-medium hover:opacity-90 transition-opacity text-sm md:text-base"
-                >
-                  Instagram
-                </Link>
-                <Link
                   href="https://facebook.com/divinitymusic"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -305,14 +297,6 @@ export default function ContactPage() {
                   className="px-6 md:px-8 py-3 border-2 border-primary-foreground rounded-lg font-medium hover:bg-primary-foreground/10 transition-colors text-sm md:text-base"
                 >
                   YouTube
-                </Link>
-                <Link
-                  href="https://twitter.com/divinitymusic"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-6 md:px-8 py-3 border-2 border-primary-foreground rounded-lg font-medium hover:bg-primary-foreground/10 transition-colors text-sm md:text-base"
-                >
-                  Twitter
                 </Link>
               </div>
             </div>

@@ -24,14 +24,6 @@ export default function About() {
                 <p className="text-base md:text-lg text-muted-foreground mb-8 leading-relaxed text-balance">
                   We are Divinity Music Crew—an evangelical family on a mission to connect the heart of humanity to the presence of Divinity.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
-                  <Button variant={"secondary"} size="lg" className="px-6 md:px-8 text-sm md:text-base">
-                    Our Story
-                  </Button>
-                  <Button variant="outline" size="lg" className="px-6 md:px-8 bg-transparent text-sm md:text-base">
-                    Partner With Us
-                  </Button>
-                </div>
               </div>
               <div className="relative h-64 sm:h-80 md:h-full min-h-96 rounded-lg overflow-hidden">
                 <Image
@@ -71,7 +63,7 @@ export default function About() {
             </div>
             <div className="space-y-6">
               <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                Our vision is to see hearts awakened and lives transformed through the power of worship, creativity, and community. We long to be a bridge—reconciling humanity to <span className="font-script italic">Divinity</span> by carrying the presence of God into every space we enter, from local streets to global stages.
+                <strong>Our vision is to reach the world with the gospel of Jesus Christ and love preached through music and service.</strong> 
               </p>
               <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                 We envision a world where pure worship inspires radical acts of love, service, and unity. Our commitment is to nurture a family defined by spiritual hunger, integrity, and an unwavering dependence on <span className="font-script italic">Grace</span>. Ultimately, every melody, every testimony, and every act of service points to our desire—seeing our generation touched, healed, and transformed by God’s love.
@@ -100,7 +92,7 @@ export default function About() {
                 </h2>
                 <div className="space-y-4 md:space-y-6">
                   <p className="text-lg text-foreground/80 leading-relaxed text-balance">
-                    Our mission is to gather, empower, and send out a thriving family of worshippers committed to transforming lives through music and practical service.
+                    <strong>Connecting humanity to divinity through good music.</strong>
                   </p>
                   <p className="text-lg text-foreground/80 leading-relaxed text-balance">
                     We exist to <span className="font-script italic">bridge the gap</span> between Heaven and Earth—leading people into authentic encounters with God and releasing blessings that meet real needs in our communities.
@@ -182,89 +174,89 @@ export default function About() {
               {[
                 {
                   name: "Favour Ikpeazu (Graceboy)",
-                  role: "Founder/Director",
+                  role: "Founder/Director (Active)",
                   part: "Vocals",
                   status: "Active",
                   image: "images/graceboy.jpg",
                 },
                 {
                   name: "King Osinachi Erondu (King Trumpet)",
-                  role: "Team Manager",
+                  role: "Team Manager (Vocals & Trumpet (Active))",
                   part: "Vocals/Trumpet",
                   status: "Active",
                   image: "images/Ossy.jpg",
                 },
                 {
                   name: "Nmesoma Emecheta",
-                  role: "Stage Director",
+                  role: "Stage Director (Piano & Bass Guitar (Active))",
                   part: "Piano/Keyboard, Bass Guitar",
                   status: "Active",
                   image: "images/nmeso.jpg",
                 },
                 {
                   name: "Miracle Assumpta Nzeh",
-                  role: "Team Welfare Director",
+                  role: "Team Welfare Director (Vocals (Active))",
                   part: "Vocals",
                   status: "Active",
                   image: "images/assumpta.jpg",
                 },
                 {
                   name: "Grace Anyanwu",
-                  role: "Vocals",
+                  role: "Vocals (Active)",
                   status: "Active",
                   image: "images/grace.jpg",
                 },
                 {
                   name: "Ibeh Chidera Gift",
-                  role: "Vocals",
+                  role: "Vocals (Active)",
                   status: "Active",
                   image: "images/dera.jpg",
                 },
                 {
                   name: "Franklin Arinze Onwosi",
-                  role: "Drums",
+                  role: "Drums (Active)",
                   status: "Active",
                   image: "images/Franklin.jpg",
                 },
                 {
                   name: "Ebuka Wilfred Ezeh",
-                  role: "Bass Guitar, Piano/Keyboard",
+                  role: "Bass Guitar, Piano/Keyboard (Active)",
                   status: "Active",
                   image: "images/Clinton.jpg",
                 },
                 {
                   name: "Ukpong Okon",
-                  role: "Drums",
+                  role: "Drums (Active)",
                   status: "Active",
                   image: "images/ukpong.jpg",
                 },
                 {
                   name: "Promise Effiong",
-                  role: "Drums",
+                  role: "Drums (Pioneer Member)",
                   status: "Pioneer Member",
                   image: "images/promise.jpg",
                 },
                 {
                   name: "Miracle Idika",
-                  role: "Piano/Keyboard",
+                  role: "Piano/Keyboard (Pioneer Member)",
                   status: "Pioneer Member",
                   image: "images/sunday.jpg",
                 },
                 {
                   name: "Chijioke Anyanwu",
-                  role: "Piano/Keyboard",
+                  role: "Piano/Keyboard (Pioneer Member)",
                   status: "Pioneer Member",
                   image: "images/chijioke.jpg",
                 },
                 {
                 name: "Esther Chiedozie-Stanley",
-                  role: "Vocals",
+                  role: "Vocals (Pioneer Member)",
                   status: "Pioneer Member",
                   image: "images/esther.jpg",
                 },
                 {
                 name: "Emmanuella Ndukwo",
-                  role: "Vocals",
+                  role: "Vocals (Pioneer Member)",
                   status: "Pioneer Member",
                   image: "images/ella.jpg",
                 }
@@ -307,12 +299,19 @@ export default function About() {
                 Whether you are a creative looking to serve, a partner looking to give, or a worshiper looking to belong—there is a place for you in this <span className="font-script italic">family</span>.
               </p>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
-                <Button size="lg" variant="secondary" className="px-6 md:px-8 text-sm md:text-base">
-                  Partner With Us
-                </Button>
-                <Button size="lg" variant="outline" className="px-6 md:px-8 text-primary-foreground border-primary-foreground hover:bg-primary-foreground/10 bg-transparent text-sm md:text-base">
-                  Contact Us for Bookings
-                </Button>
+                <a 
+                   href="https://forms.gle/BRxP4SnhFTpEdzr69" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+>
+                    <Button 
+                   size="lg" 
+                    variant="outline" 
+                    className="px-6 md:px-8 text-sm md:text-base text-white border-white hover:bg-white/10 bg-transparent"
+                    >
+                      Join the workforce
+                  </Button>
+                  </a>
               </div>
             </div>
           </Container>
